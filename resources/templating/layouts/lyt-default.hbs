@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+	{{> b-version}}
+
+<html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+
+	{{#block "metadata"}}
+		{{> _metadata }}
+	{{/block}}
+	{{#block "styles"}}
+		{{> _styles }}
+	{{/block}}
+
+</head>
+
+<body class="{{bodyclass}}">
+
+<div class="page-wrapper">
+
+	<div class="header" data-js-module="sticky">
+		<div class="header__inner is-container is-table-lyt">
+			<div class="r-header-left">
+				{{> b-logo }}
+			</div>
+			<div class="r-header-right">
+				{{> b-toggler }}
+				{{> b-github }}
+			</div>
+		</div>
+	</div>
+
+	<!-- Nav
+    ================================================== -->
+	<div class="r-off-canvas" data-js-module="nav" data-js-options='{}'>
+		<div class="off-canvas__inner is-container">
+			{{> b-nav nav-bp}}
+		</div>
+	</div>
+
+	<!-- Stage
+    ================================================== -->
+	<section class="r-stage">
+		<div class="stage__inner is-container">
+			{{> b-stage-content }}
+		</div>
+	</section>
+
+	<div class="r-nav">
+		<div class="nav__inner is-container">
+			{{> b-nav}}
+		</div>
+	</div>
+
+	{{#if (content "main")}}
+		<div class="r-main">
+			<div class="main__inner is-container">
+				<div class="main__content">
+					{{#block "main"}}{{/block}}
+				</div>
+			</div>
+		</div>
+	{{/if}}
+
+	{{#if (content "details")}}
+		<div class="r-details">
+			<div class="details__inner is-container">
+				<div class="details__content">
+					{{#block "details"}}{{/block}}
+				</div>
+			</div>
+		</div>
+	{{/if}}
+	{{#if (content "demo-top")}}
+		<div class="r-demo">
+			<div class="r-demo-top">
+				<div class="demo__inner is-container">
+					<div class="demo__content">
+						{{#block "demo-top"}}{{/block}}
+					</div>
+				</div>
+			</div>
+			<div class="r-demo-bottom">
+				<div class="demo__inner">
+					<div class="demo__content">
+						{{#block "demo-bottom"}}{{/block}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/if}}
+
+	<!-- Footer
+    ================================================== -->
+	<footer class="footer">
+		<div class="r-footer-container is-container">
+			{{#block "footer"}}
+				{{> b-footer-copy }}
+			{{/block}}
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts
+================================================== -->
+{{#block "scripts"}}
+	{{> _scripts }}
+{{/block}}
+
+</body>
+</html>

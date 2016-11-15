@@ -1,0 +1,47 @@
+.is-container {
+	@include grid-container();
+
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+/* ---------------------------------------------------
+Colors
+--------------------------------------------------- */
+.is-red {
+	background-color: #ED0A00;
+}
+
+.is-grey {
+	background-color: #bab0b8;
+}
+
+.is-light-red {
+	background-color: #ff514f;
+}
+
+/* ---------------------------------------------------
+Background Colors
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+layout
+--------------------------------------------------- */
+.is-centered {
+	text-align: center;
+}
+
+.isnt-scrollable {
+	overflow: hidden;
+}
+
+.is-hidden {
+	@include hidden;
+}
+
+/* ---------------------------------------------------
+Logo Modifiers
+--------------------------------------------------- */
+.is-veams {
+	@include sprites-veams-std();
+}

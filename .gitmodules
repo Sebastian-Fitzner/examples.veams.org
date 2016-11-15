@@ -1,0 +1,9 @@
+[submodule "resources/templating/mixed/veams/article"]
+	path = resources/templating/mixed/veams/article
+	url = git@github.com:Veams/veams-component-article.git
+[submodule "resources/templating/mixed/docs/accordion"]
+	path = resources/templating/mixed/docs/accordion
+	url = git@github.com:Veams/veams-component-accordion.git
+[submodule "resources/js/vendor/veams-query"]
+	path = resources/js/vendor/veams-query
+	url = git@github.com:Veams/veams-query.git

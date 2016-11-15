@@ -1,0 +1,31 @@
+.r-main {
+	@extend %float;
+
+	background-color: color(highlight-light);
+	padding: 4rem 0;
+	background-image: $bg-pattern;
+}
+
+.r-details {
+	@extend %float;
+
+	background-color: color(highlight-main-dark);
+	padding: 4rem 0;
+}
+
+.r-demo-top {
+	@extend %float;
+
+	background-color: color(highlight-dark);
+	color: color(white);
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.r-demo-bottom {
+	@extend %float;
+
+	background-color: color(highlight-light);
+	padding: 4rem 0;
+	background-image: $bg-pattern;
+}

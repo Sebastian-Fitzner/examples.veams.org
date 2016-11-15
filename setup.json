@@ -1,0 +1,50 @@
+{
+  "generator-veams": {
+    "projectName": "Veams Examples",
+    "projectAuthor": "Sebastian Fitzner",
+    "taskRunner": [
+      "grunt"
+    ],
+    "templateEngine": "mangony",
+    "mangonyExpress": true,
+    "installExtendedLayout": false,
+    "installPlugin": false,
+    "gulpModules": [],
+    "gruntModules": [
+      "grunt-autoprefixer",
+      "grunt-browser-sync",
+      "grunt-browserify",
+      "grunt-combine-mq",
+      "grunt-contrib-handlebars",
+      "grunt-contrib-htmlmin",
+      "grunt-contrib-uglify",
+      "grunt-dr-svg-sprites",
+      "grunt-responsive-images",
+      "grunt-version",
+      "grunt-contrib-handlebars",
+      "grunt-browserify",
+      "grunt-contrib-uglify"
+    ],
+    "features": [
+      "createDevFolder"
+    ],
+    "jsLibs": [
+      "jquery"
+    ],
+    "cssLibs": [
+      "neat"
+    ],
+    "testAndQA": true,
+    "testAndQALibs": [
+      "hintingHTML",
+      "stylelint",
+      "webdriver"
+    ],
+    "veamsPackages": [
+      "veamsMethodology",
+      "veamsSCSS",
+      "veamsJS"
+    ],
+    "docs": []
+  }
+}

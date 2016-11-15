@@ -1,0 +1,52 @@
+/* ===================================================
+Docs
+=================================================== */
+
+.docs {
+
+	.is-large-tf {
+		font-size: 2.8rem;
+		font-weight: $font-bold;
+	}
+
+	.docs__demo-section-item {
+		@include float();
+
+		position: relative;
+	}
+
+	.docs__demo-section-headline {
+		clear: both;
+		font-size: 2.4rem;
+		z-index: 1;
+		min-width: 150px;
+		opacity: 1;
+		padding: $margin-base;
+		background-color: color(highlight-dark);
+		color: color(highlight-light);
+		transition: opacity $transition-duration $transition-ease-method;
+		text-align: center;
+		margin-bottom: $margin-base * 2;
+
+		&.is-bg-light {
+			margin-top: 3rem;
+			font-size: 2rem;
+			background-color: rgba(color(highlight-main), .5);
+			color: color(highlight-dark);
+			display: inline-block;
+		}
+	}
+
+	.docs__demo-variation-headline {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.docs__code-item {
+		position: relative;
+
+		pre {
+			font-size: 1.6rem;
+		}
+	}
+}

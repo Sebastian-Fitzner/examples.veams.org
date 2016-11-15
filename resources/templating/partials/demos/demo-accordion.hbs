@@ -1,0 +1,18 @@
+{{! WrapWith START: Segment }}
+{{#wrapWith "u-segment" headline="Default accordion" centered=true}}
+	{{#with accordion-bp.simple}}
+	{{! WrapWith START: Accordion }}
+		{{#wrapWith "c-accordion"}}
+		{{! WrapWith START: Item }}
+			{{#wrapWith "c-accordion__item" accItemId="test-1" accButton="Item 1"}}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.
+			{{/wrapWith}}
+			{{#wrapWith "c-accordion__item" accItemId="test-2" accButton="Item 2"}}
+				{{> c-rte ../../../rte-bp.single}}
+			{{/wrapWith}}
+		{{! WrapWith END: Item }}
+		{{/wrapWith}}
+	{{! WrapWith END: Accordion }}
+	{{/with}}
+{{/wrapWith}}
+{{! WrapWith END: Segment }}

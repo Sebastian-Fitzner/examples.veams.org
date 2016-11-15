@@ -1,0 +1,9 @@
+---
+block: stage
+---
+<div class="b-stage-content">
+	<h1 class="stage-content__head">{{uppercase type}}</h1>
+
+	<h2 class="stage-content__lead">{{#if displayName}}{{uppercase displayName}}{{else}}{{#if title}}{{title}}{{else}}{{currentPage.filename}}{{/if}}{{/if}}</h2>
+	<h2 class="stage-content__sub">{{{ contentTitle }}}</h2>
+</div>

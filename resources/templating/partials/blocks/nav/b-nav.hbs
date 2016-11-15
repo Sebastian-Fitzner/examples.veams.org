@@ -1,0 +1,38 @@
+{{! ---
+block: b-nav
+============================================
+
+Requirements:
+- (only hbs)
+
+Options:
+- navClasses {String} - Modifier classes
+
+Important Notes:
+
+--- }}
+
+<nav class="b-nav u-grid-row" id="navigation">
+	{{#each data}}
+		<div class="nav__wrapper u-grid-col is-col-4">
+			<h2 class="nav__headline">
+				{{{type}}}
+			</h2>
+			<ul class="nav__list">
+				{{#each data}}
+					<li class="nav__list-item">
+						{{#if url}}
+							<a href="{{url}}" data-js-atom="nav-item" class="nav__link{{#is menuLink ../../../../category}} is-active{{/is}}">
+								{{{menuLink}}}
+							</a>
+						{{else}}
+							<span class="nav__placeholder">
+								{{{placeholder}}}
+							</span>
+						{{/if}}
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	{{/each}}
+</nav>

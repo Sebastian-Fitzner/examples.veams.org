@@ -1,0 +1,60 @@
+{
+	"navClasses": false,
+	"data": [
+		{
+			"type": "Components",
+			"data": [
+				{
+					"url": "/#accordion",
+					"menuLink": "Accordion"
+				},
+				{
+					"url": "/#article",
+					"menuLink": "Article"
+				},
+				{
+					"url": "/#badges",
+					"menuLink": "Badges"
+				}
+			]
+		},
+		{
+			"type": "Utilities",
+			"data": [
+				{
+					"url": "/page-utilities.html#grid",
+					"menuLink": "Grid"
+				},
+				{
+					"url": "/page-utilities.html#equalizer",
+					"menuLink": "Equalizer"
+				},
+				{
+					"url": "/page-utilities.html#sticky",
+					"menuLink": "Sticky"
+				}
+			]
+		},
+		{
+			"type": "Blocks",
+			"data": [
+				{
+					"url": "/methodology/",
+					"menuLink": "Veams-Methodology"
+				},
+				{
+					"url": "/sass/",
+					"menuLink": "Veams-Sass"
+				},
+				{
+					"url": "/components/",
+					"menuLink": "Veams-Components"
+				},
+				{
+					"url": "/js/",
+					"menuLink": "Veams-JavaScript"
+				}
+			]
+		}
+	]
+}
