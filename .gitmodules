@@ -2,3 +2,6 @@
 	path = resources/js/veams-js
 	url = git@github.com:Sebastian-Fitzner/veams-js.git
 	branch = dev
+[submodule "resources/js/vendor/veams-query"]
+	path = resources/js/vendor/veams-query
+	url = git@github.com:Veams/veams-query.git
