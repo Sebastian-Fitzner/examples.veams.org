@@ -5,3 +5,12 @@
 [submodule "resources/js/vendor/veams-query"]
 	path = resources/js/vendor/veams-query
 	url = git@github.com:Veams/veams-query.git
+	branch = dev
+[submodule "resources/templating/mixed/components/accordion"]
+	path = resources/templating/mixed/components/accordion
+	url = git@github.com:Veams/veams-component-accordion.git
+	branch = dev
+[submodule "resources/templating/mixed/utilities/grid"]
+	path = resources/templating/mixed/utilities/grid
+	url = git@github.com:Veams/veams-utility-grid.git
+	branch = dev
