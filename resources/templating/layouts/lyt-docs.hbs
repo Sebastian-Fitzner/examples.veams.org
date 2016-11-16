@@ -84,18 +84,22 @@
 										{{#if docs.variationName}}
 											<h4 class="docs__demo-section-headline">{{docs.variationName}}</h4>
 										{{/if}}
+										<div class="docs__code-item">
+											{{#highlight "html"}}
+												{{#beautifyHTML}}
+													{{{yield}}}
+												{{/beautifyHTML}}
+											{{/highlight}}
+										</div>
+									{{/each}}
+								{{else}}
+									<div class="docs__code-item">
 										{{#highlight "html"}}
 											{{#beautifyHTML}}
 												{{{yield}}}
 											{{/beautifyHTML}}
 										{{/highlight}}
-									{{/each}}
-								{{else}}
-									{{#highlight "html"}}
-										{{#beautifyHTML}}
-											{{{yield}}}
-										{{/beautifyHTML}}
-									{{/highlight}}
+									</div>
 								{{/if}}
 							{{/wrapWith}}
 

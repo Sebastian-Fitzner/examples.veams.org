@@ -4,7 +4,7 @@ const Helpers = App.Helpers;
 
 // ES6 Modules
 import Nav from './modules/nav/nav';
-import Accordion from '../templating/mixed/docs/components/accordion/js/accordion';
+import Accordion from '../templating/mixed/components/accordion/js/accordion';
 
 
 // @INSERTPOINT :: @ref: js-import

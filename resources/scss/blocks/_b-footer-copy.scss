@@ -3,6 +3,7 @@ BLOCK: Footer Copy
 =================================================== */
 
 .b-footer-copy {
+	@include grid-column(12);
 
 	a {
 		@include link-std;

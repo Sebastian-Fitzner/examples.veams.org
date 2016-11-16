@@ -34,8 +34,8 @@ Main File For Imports
 @import "global/modifiers";
 
 // Veams
-@import "../templating/mixed/docs/components/accordion/scss/c-accordion";
-@import "../templating/mixed/docs/utilities/grid/scss/u-grid";
+@import "../templating/mixed/components/accordion/scss/c-accordion";
+@import "../templating/mixed/utilities/grid/scss/u-grid";
 
 // Regions in Layouts
 @import "layouts/_footer";

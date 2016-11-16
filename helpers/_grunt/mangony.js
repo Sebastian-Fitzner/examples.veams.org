@@ -27,7 +27,8 @@ module.exports = {
 			partials: {
 				dir: '',
 				files: [
-					'mixed/docs/**/*.hbs',
+					'mixed/utilities/**/*.hbs',
+					'mixed/components/**/*.hbs',
 					'partials/**/*.hbs'
 				]
 			},

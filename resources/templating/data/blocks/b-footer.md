@@ -1,1 +1,1 @@
-If you've spotted a typo or a mistake, or wish to add something on, you could write about this on [GitHub](https://github.com/Sebastian-Fitzner/veams.org) | © Made with love by [Sebastian Fitzner](https://github.com/Sebastian-Fitzner)
+If you've spotted a typo or a mistake, or wish to add something on, you could write about this on [GitHub](https://github.com/Sebastian-Fitzner/examples.veams.org) | © Made with love by [Sebastian Fitzner](https://github.com/Sebastian-Fitzner)

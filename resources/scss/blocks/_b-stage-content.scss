@@ -1,4 +1,6 @@
 .b-stage-content {
+	@include grid-column(12);
+
 	padding: 4rem 0;
 	position: relative;
 	z-index: 0;
