@@ -14,3 +14,7 @@
 	path = resources/templating/mixed/utilities/grid
 	url = git@github.com:Veams/veams-utility-grid.git
 	branch = dev
+[submodule "resources/templating/mixed/components/article"]
+	path = resources/templating/mixed/components/article
+	url = git@github.com:Veams/veams-component-article.git
+	branch = dev
