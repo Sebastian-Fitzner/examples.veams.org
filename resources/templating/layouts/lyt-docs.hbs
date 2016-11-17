@@ -54,6 +54,9 @@
 							{{/wrapWith}}
 							{{#if this.scssFiles}}
 								{{#wrapWith "c-accordion__item" accItemId="styles" accButton="Styles"}}
+									{{#glob @root.currentPage.dirname}}
+										{{debug this}}
+									{{/glob}}
 									{{#each this.scssFiles}}
 										<h4 class="is-hidden">{{this}}</h4>
 										<div class="docs__code-item">
