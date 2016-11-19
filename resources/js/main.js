@@ -5,6 +5,8 @@ const Helpers = App.Helpers;
 // ES6 Modules
 import Nav from './modules/nav/nav';
 import Accordion from '../templating/mixed/components/accordion/js/accordion';
+import FormAjax from '../templating/mixed/components/form/js/form-ajax';
+import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
 
 
 // @INSERTPOINT :: @ref: js-import
@@ -80,6 +82,25 @@ class Core {
 			module: Accordion,
 			context: context
 		});
+
+		/**
+		 * Init Form
+		 */
+		Helpers.loadModule({
+			domName: 'form-ajax',
+			module: FormAjax,
+			context: context
+		});
+
+		/**
+		 * Init Datepicker
+		 */
+		Helpers.loadModule({
+			domName: 'form-datepicker',
+			module: FormDatepicker,
+			context: context
+		});
+
 
 		// @INSERTPOINT :: @ref: js-init-v3
 

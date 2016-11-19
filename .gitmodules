@@ -18,3 +18,7 @@
 	path = resources/templating/mixed/components/article
 	url = git@github.com:Veams/veams-component-article.git
 	branch = dev
+[submodule "resources/templating/mixed/components/form"]
+	path = resources/templating/mixed/components/form
+	url = git@github.com:Veams/veams-component-form.git
+	branch = dev

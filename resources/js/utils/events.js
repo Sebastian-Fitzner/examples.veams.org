@@ -49,6 +49,14 @@ EVENTS.accordion = {
 	closeAll: 'accordion:closeAll'
 };
 
+/**
+ * Events Form
+ */
+EVENTS.form = {
+	complete: 'form:complete',
+	reset: 'form:reset'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;
