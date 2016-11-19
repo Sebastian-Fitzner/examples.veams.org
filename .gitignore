@@ -18,6 +18,7 @@ node_modules
 .idea
 _output
 _dist
+styles.tmp.scss
 resources/bower-components
 /resources/templating/exported/exported-data.json
 /resources/templating/exported/watcher-data.json
