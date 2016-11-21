@@ -9,9 +9,13 @@ var glob = require('globby');
 		 * @author Sebastian Fitzner
 		 */
 		Handlebars.registerHelper('glob', function (dir, obj) {
+			var level = '/*';
+			var fileExt = obj.hash.fileExt ? '.' + obj.hash.fileExt : '';
 			if (obj.hash.deep) {
+				level = '/**/*'
 			}
-			glob([dir + '/*']).then(function (paths) {
+
+			glob([dir + level + fileExt]).then(function (paths) {
 				return obj.fn(paths);
 			});
 		});

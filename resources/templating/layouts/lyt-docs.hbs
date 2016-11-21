@@ -27,6 +27,17 @@
 							{{/if}}
 							{{#wrapWith "c-accordion__item" accItemId="templates" accButton="Templates"}}
 
+								{{#glob (buildPath @root.currentPage.dirname 'partials' goUp=1) fileExt="hbs"}}
+									{{#each this}}
+										{{!debug this}}
+										{{!this}}
+
+										{{#highlight "hbs" escapeHTML=true}}
+											{{{!embeding ../this}}}
+										{{/highlight}}
+									{{/each}}
+								{{/glob}}
+
 								{{#unless hideRootTemplate}}
 									<h4 class="docs__demo-section-headline">{{@root.currentPage.filename}}</h4>
 									<div class="docs__code-item" data-js-module="content-editor"
@@ -38,6 +49,7 @@
 										{{/getData}}
 									</div>
 								{{/unless}}
+
 
 								{{#if this.subTemplates}}
 									{{#each this.subTemplates}}
