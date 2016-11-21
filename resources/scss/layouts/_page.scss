@@ -1,0 +1,14 @@
+.r-page {
+	background-color: color(highlight-light);
+	padding: 4rem 0;
+	background-image: $bg-pattern;
+}
+
+.r-page-left {
+	position: fixed;
+	overflow-y: auto;
+
+	.page-left__container {
+		padding-right: map-get($neat-grid, gutter) * 2;
+	}
+}

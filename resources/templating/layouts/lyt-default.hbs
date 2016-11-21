@@ -43,57 +43,72 @@
 		</div>
 	</div>
 
-	<!-- Stage
-    ================================================== -->
-	<section class="r-stage">
-		<div class="stage__inner is-container">
-			{{> b-stage-content }}
-		</div>
-	</section>
 
-	<div class="r-nav">
-		<div class="nav__inner is-container">
-			{{> b-nav}}
+	<div class="r-page">
+		<div class="page__container is-container is-grid-row">
+			<div class="r-page-left is-col-mobile-l-3">
+				<div class="page-left__container">
+					{{> b-sitemap }}
+
+				</div>
+
+			</div>
+			<div class="r-page-right is-col-mobile-l-offset-3 is-col-mobile-l-9">
+				<!-- Stage
+                ================================================== -->
+				<section class="r-stage">
+					<div class="stage__inner is-container">
+						{{> b-stage-content }}
+					</div>
+				</section>
+				<div class="r-nav">
+					<div class="nav__inner is-container">
+						{{> b-nav}}
+					</div>
+				</div>
+				{{#if (content "main")}}
+					<div class="r-main">
+						<div class="main__inner is-container">
+							<div class="main__content">
+								{{#block "main"}}{{/block}}
+							</div>
+						</div>
+					</div>
+				{{/if}}
+
+				{{#if (content "details")}}
+					<div class="r-details">
+						<div class="details__inner is-container">
+							<div class="details__content">
+								{{#block "details"}}{{/block}}
+							</div>
+						</div>
+					</div>
+				{{/if}}
+				{{#if (content "demo-top")}}
+					<div class="r-demo">
+						<div class="r-demo-top">
+							<div class="demo__inner is-container">
+								<div class="demo__content">
+									{{#block "demo-top"}}{{/block}}
+								</div>
+							</div>
+						</div>
+						<div class="r-demo-bottom">
+							<div class="demo__inner">
+								<div class="demo__content">
+									{{#block "demo-bottom"}}{{/block}}
+								</div>
+							</div>
+						</div>
+					</div>
+				{{/if}}
+			</div>
 		</div>
+
+
 	</div>
 
-	{{#if (content "main")}}
-		<div class="r-main">
-			<div class="main__inner is-container">
-				<div class="main__content">
-					{{#block "main"}}{{/block}}
-				</div>
-			</div>
-		</div>
-	{{/if}}
-
-	{{#if (content "details")}}
-		<div class="r-details">
-			<div class="details__inner is-container">
-				<div class="details__content">
-					{{#block "details"}}{{/block}}
-				</div>
-			</div>
-		</div>
-	{{/if}}
-	{{#if (content "demo-top")}}
-		<div class="r-demo">
-			<div class="r-demo-top">
-				<div class="demo__inner is-container">
-					<div class="demo__content">
-						{{#block "demo-top"}}{{/block}}
-					</div>
-				</div>
-			</div>
-			<div class="r-demo-bottom">
-				<div class="demo__inner">
-					<div class="demo__content">
-						{{#block "demo-bottom"}}{{/block}}
-					</div>
-				</div>
-			</div>
-		</div>
-	{{/if}}
 
 	<!-- Footer
     ================================================== -->

@@ -1,26 +1,41 @@
-{{! ---
-block: sitemap
-============================================
+---
+publish: false
+---
 
+{{!
 Important Notes:
-Be sure you use collections to categorize your sitemap.
-If you do not want to use collections, just delete this `sitemap` partial
---- }}
+================================================================================
+- Be sure you use collections (e.g. "type") to categorize your sitemap.
+- Furthermore you need to consider the publish flag option so that only published files will be listed!
+- To print out another display name for your page/partial define "displayName" in your YFM
+}}
 
 <nav class="b-sitemap">
-	{{#each sitemap}}
+	{{#each collections.type}}
 		<div class="sitemap__overview">
-			<h3 class="sitemap__headline">{{sitemap}}</h3>
+			<h3 class="sitemap__headline">{{name}}</h3>
 			<ol class="sitemap__list">
-				{{#each ../pages}}
-					{{#is data.sitemap ../sitemap}}
-						<li class="sitemap__list-item">
-							<a href="{{autolink}}" class="sitemap__list-item-link{{#is ../../page.dest ../this.dest}} is-active{{/is}}">
-								{{data.menuLink}}
-							</a>
-						</li>
-					{{/is}}
-				{{/each}}
+				{{#objToArr ../pages}}
+					{{#sortArr this "filename"}}
+						{{#each this}}
+							{{#is parsed.data.type ../../name}}
+								{{#isnt parsed.data.publish false}}
+									<li class="sitemap__list-item">
+										<a href="{{@root.assets}}{{#if @root.servermode}}{{serverFile}}{{else}}{{destFile}}{{/if}}"
+										   class="sitemap__list-item-link">
+											<span class="sitemap__item-icon icon is-icon-arrow"></span>
+											{{#if parsed.data.displayName}}
+												{{parsed.data.displayName}}
+											{{else}}
+												{{this.filename}}
+											{{/if}}
+										</a>
+									</li>
+								{{/isnt}}
+							{{/is}}
+						{{/each}}
+					{{/sortArr}}
+				{{/objToArr}}
 			</ol>
 		</div>
 	{{/each}}
