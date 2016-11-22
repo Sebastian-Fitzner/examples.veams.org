@@ -1,0 +1,50 @@
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-accordion--sidenav {
+	/*
+	Header/ Toggle Button
+	----------------------- */
+	.accordion__btn {
+		color: #666;
+		display: block;
+		font-size: 2rem;
+		padding: 1rem 1rem 1rem 0;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+
+		&::before,
+		&::after {
+			@extend %pseudo;
+
+			transition: bottom $transition-duration/2 linear $transition-duration/2, transform $transition-duration/2 linear;
+			background-color: #666;
+			height: 2px;
+			right: 10px;
+			top: 50%;
+			width: 20px;
+		}
+
+		&::after {
+			transform: rotate(90deg);
+		}
+
+		&.is-active {
+
+			&::after {
+				transform: rotate(0deg);
+			}
+		}
+	}
+
+	.accordion__icon {
+		position: relative;
+	}
+
+	.accordion__content-inner {
+		padding: 1rem 0;
+	}
+}
