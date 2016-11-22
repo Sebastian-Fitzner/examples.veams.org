@@ -46,7 +46,6 @@
 	}
 
 	.is-active .toggler__icon {
-
 		&:nth-child(1) {
 			@include transform(rotate(135deg));
 

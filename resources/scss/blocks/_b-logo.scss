@@ -6,6 +6,7 @@ BLOCK: LOGO
 	.logo__headline {
 		@include hidden-text;
 	}
+
 	.logo__link {
 		display: block;
 	}

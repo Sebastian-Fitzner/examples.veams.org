@@ -1,52 +1,38 @@
 /* ===================================================
 Main File For Imports
 =================================================== */
-
 // Helpers
 @import "../bower-components/bourbon/app/assets/stylesheets/bourbon";
-
 // Reset (veams-reset or veams-normalize)
 @import "../bower-components/veams-sass/resources/scss/veams-reset";
-
 // Global Variables and Settings
 @import "global/_vars";
-@import "../bower-components/veams-sass/resources/scss/veams"; 
+@import "../bower-components/veams-sass/resources/scss/veams";
 @import "../bower-components/neat/core/neat";
-
 // Icons
 @import "icons/**/*";
-
 // Helpers
 @import "helpers/functions/**/*";
 @import "helpers/mixins/**/*";
-
 // Globals
 @import "global/_base";
 @import "global/_get-media";
 @import "global/modifiers";
-
 // Veams
 @import "../templating/mixed/components/accordion/scss/c-accordion";
 @import "../templating/mixed/components/article/scss/c-article";
 @import "../templating/mixed/components/form/scss/c-form";
 @import "../templating/mixed/components/form/scss/c-form__datepicker";
 @import "../templating/mixed/utilities/grid/scss/u-grid";
-
 // Regions in Layouts
 @import "layouts/**/*";
-
 // Components
 @import "components/**/*";
-
 // Docs
 @import "docs/**/*";
-
 // Blocks
 @import "blocks/**/*";
-
 // Utilites
 @import "utilities/**/*";
-
-
 // Print
 @import "global/_print";

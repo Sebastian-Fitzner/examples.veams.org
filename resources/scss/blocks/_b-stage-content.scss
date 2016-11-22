@@ -16,6 +16,7 @@
 		z-index: 1;
 		mix-blend-mode: multiply;
 	}
+
 	&::before {
 		@extend %pseudo;
 		@include animation(rotateSmall linear $transition-duration*100 infinite);
@@ -54,7 +55,7 @@
 			@include bp(map-get($bp, mobile-l)) {
 				display: none;
 			}
-			
+
 		}
 	}
 
@@ -104,9 +105,11 @@
 	0% {
 		transform: rotateZ(170deg) translateY(0);
 	}
+
 	50% {
 		transform: rotateZ(-10deg) translateY(-10%);
 	}
+
 	100% {
 		transform: rotateZ(-190deg) translateY(0%);
 	}
@@ -116,9 +119,11 @@
 	0% {
 		transform: rotateZ(0deg) translateY(0);
 	}
+
 	50% {
 		transform: rotateZ(180deg) translateY(-20%);
 	}
+
 	100% {
 		transform: rotateZ(360deg) translateY(0%);
 	}
@@ -128,9 +133,11 @@
 	0% {
 		transform: rotateZ(45deg) translate(-20%, 0%);
 	}
+
 	50% {
 		transform: rotateZ(-155deg) translate(25%, 0%);
 	}
+
 	100% {
 		transform: rotateZ(-315deg) translate(-20%, 0%);
 	}

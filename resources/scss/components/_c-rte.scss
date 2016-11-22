@@ -39,10 +39,8 @@ Global Styles
 		font-size: 1.9rem;
 		font-weight: $font-light;
 		line-height: 1.35;
-
 		margin: 2rem 0;
 		padding: 1rem;
-
 		color: #000;
 		background: lighten(color(highlight-main), 20);
 	}
@@ -51,10 +49,8 @@ Global Styles
 		font-size: 1.75rem;
 		font-weight: $font-light;
 		line-height: 1.35;
-
 		margin: 2rem 0;
 		padding: .5rem;
-
 		color: #000;
 		background: color(white);
 	}
@@ -72,9 +68,13 @@ Global Styles
 	em {
 		font-style: italic;
 	}
+
 	ol {
 		counter-reset: listCounter;
 		margin-left: 3rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		list-style: decimal;
 
 		li {
 			counter-increment: listCounter;
@@ -108,6 +108,7 @@ Global Styles
 		}
 
 	}
+
 	ul {
 		list-style: none;
 		margin-left: 3rem;
@@ -132,15 +133,9 @@ Global Styles
 			}
 		}
 	}
-	ol {
-		margin-top: 1rem;
-		margin-bottom: 1rem;
 
-		list-style: decimal;
-	}
 	img {
 		display: block;
-
 		max-width: 100%;
 		height: auto;
 		margin: 1rem auto;
@@ -192,6 +187,7 @@ Global Styles
 			font-weight: normal;
 			text-align: left;
 		}
+
 		td {
 			padding: 15px 20px;
 			text-align: left;
@@ -205,6 +201,7 @@ Global Styles
 		&:nth-child(n+1) {
 			background-color: transparent;
 		}
+
 		&:nth-child(2n+2) {
 			background-color: color(white);
 		}
@@ -215,7 +212,7 @@ Global Styles
 	----------------------- */
 	th {
 		background-color: color(highlight-main-dark);
-		color: #FFFFFF;
+		color: #fff;
 	}
 }
 

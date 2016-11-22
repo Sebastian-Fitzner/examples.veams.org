@@ -20,7 +20,9 @@ body {
 	line-height: 140%;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 

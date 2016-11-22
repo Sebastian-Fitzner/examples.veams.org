@@ -5,7 +5,7 @@ Off Canvas Region
 .r-off-canvas {
 	@include transition(right $transition-duration $transition-ease-method);
 
-	background-color: rgba(color(highlight-dark), 0.95);
+	background-color: rgba(color(highlight-dark), .95);
 	height: 100%;
 	position: fixed;
 	right: -100%;
