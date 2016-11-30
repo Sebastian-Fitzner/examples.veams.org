@@ -7,7 +7,20 @@
 				{{! WrapWith START: Grid Col }}
 					{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12"}}
 					{{! WrapWith START: Accordion }}
-						{{#wrapWith "c-accordion"}}
+						{{#wrapWith "c-accordion" settings=(JSONParse '{
+						    "jsOptions": [
+                                {
+                                    "jsKey": "openIndex",
+                                    "jsValue": 0,
+                                    "jsObject": true
+                                },
+                                {
+                                    "jsKey": "singleOpen",
+                                    "jsValue": true,
+                                    "jsObject": true
+                                }
+                            ]
+						}')}}
 						{{! WrapWith START: Item }}
 							{{#wrapWith "c-accordion__item" accItemId="readme-file" accButton="README"}}
 								<div class="docs__code-item">

@@ -7,8 +7,14 @@
 .r-page-left {
 	position: fixed;
 	overflow-y: auto;
+	width: 300px;
 
 	.page-left__container {
-		padding-right: map-get($neat-grid, gutter) * 2;
+		padding-right: $margin-base * 3;
 	}
+}
+
+.r-page-right {
+	width: calc(100% - 300px);
+	margin-left: 300px;
 }
