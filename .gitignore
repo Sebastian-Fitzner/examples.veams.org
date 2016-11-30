@@ -5,6 +5,7 @@ lib-cov
 *.dat
 *.out
 *.pid
+*.ps1
 *.gz
 *.yo-rc.json
 
