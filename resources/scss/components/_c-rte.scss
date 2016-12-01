@@ -25,12 +25,11 @@ Global Styles
 	}
 
 	h3 {
-		border-top: 1px solid lighten(color(highlight-dark), 60);
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: $font-light;
 		line-height: 1.5;
-		margin: 2.75rem 0;
-		padding-top: 2rem;
+		margin: 2rem 0 1rem;
+		padding-top: 1rem;
 		text-transform: uppercase;
 		color: lighten(color(highlight-dark), 35);
 	}
@@ -186,6 +185,8 @@ Global Styles
 			padding: 15px;
 			font-weight: normal;
 			text-align: left;
+			background-color: color(highlight-main-dark);
+			color: #fff;
 		}
 
 		td {
@@ -207,13 +208,17 @@ Global Styles
 		}
 	}
 
+	hr {
+		margin-top: $margin-base * 3;
+		margin-bottom: $margin-base * 3;
+		background-color: transparent;
+		border-top: 1px solid $color-grey-light;
+		border-bottom: 1px solid #fff;
+	}
+
 	/*
 	States
 	----------------------- */
-	th {
-		background-color: color(highlight-main-dark);
-		color: #fff;
-	}
 }
 
 /* ---------------------------------------------------
