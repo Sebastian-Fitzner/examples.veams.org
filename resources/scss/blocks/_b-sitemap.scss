@@ -1,0 +1,30 @@
+/* ===================================================
+Sitemap
+=================================================== */
+
+.b-sitemap {
+	.sitemap__overview {
+	}
+
+	.sitemap__headline {
+	}
+
+	.sitemap__list {
+	}
+
+	.sitemap__list-item {
+	}
+
+	.sitemap__list-item-link {
+		text-decoration: none;
+
+		&:hover,
+		&.is-active {
+			color: map-get($colors, highlight-dark);
+		}
+	}
+
+	.sitemap__item-icon {
+	}
+
+}

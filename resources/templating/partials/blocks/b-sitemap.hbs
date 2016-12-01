@@ -37,7 +37,7 @@ Important Notes:
 										{{#isnt parsed.data.publish false}}
 											<li class="sitemap__list-item">
 												<a href="{{@root.assets}}{{#if @root.servermode}}{{serverFile}}{{else}}{{destFile}}{{/if}}"
-												   class="sitemap__list-item-link">
+												   class="sitemap__list-item-link{{#is @root.currentPage.filename this.filename}} is-active{{/is}}">
 													<span class="sitemap__item-icon icon is-icon-arrow"></span>
 													{{#if parsed.data.displayName}}
 														{{parsed.data.displayName}}
