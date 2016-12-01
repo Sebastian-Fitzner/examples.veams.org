@@ -26,3 +26,11 @@
 	path = resources/templating/mixed/components/picture
 	url = git@github.com:Veams/veams-component-picture.git
 	branch = dev
+[submodule "resources/templating/mixed/components/badge"]
+	path = resources/templating/mixed/components/badge
+	url = git@github.com:Veams/veams-component-badge.git
+	branch = dev
+[submodule "resources/templating/mixed/components/video"]
+	path = resources/templating/mixed/components/video
+	url = git@github.com:Veams/veams-component-video.git
+	branch = dev
