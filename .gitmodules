@@ -34,3 +34,7 @@
 	path = resources/templating/mixed/components/video
 	url = git@github.com:Veams/veams-component-video.git
 	branch = dev
+[submodule "resources/templating/mixed/components/table"]
+	path = resources/templating/mixed/components/table
+	url = git@github.com:Veams/veams-component-table.git
+	branch = dev
