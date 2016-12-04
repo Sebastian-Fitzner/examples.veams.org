@@ -20,6 +20,7 @@
     "exoskeleton": "^0.7.0",
     "handlebars": "^4.0.5",
     "moment": "^2.16.0",
+    "picturefill": "^3.0.2",
     "pikaday": "^1.5.1",
     "respimage": "^1.4.0"
   },

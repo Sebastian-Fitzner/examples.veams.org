@@ -1,7 +1,7 @@
 var externalLibs = [
 	'exoskeleton',
 	'handlebars',
-	'respimage',
+	'picturefill',
 	'./resources/js/vendor/veams-query/veams-query.js:veams-query'
 ];
 
