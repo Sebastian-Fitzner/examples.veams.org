@@ -38,3 +38,19 @@
 	path = resources/templating/mixed/components/table
 	url = git@github.com:Veams/veams-component-table.git
 	branch = dev
+[submodule "resources/templating/mixed/components/slider"]
+	path = resources/templating/mixed/components/slider
+	url = git@github.com:Veams/veams-component-slider.git
+    branch = dev
+[submodule "resources/templating/mixed/components/cta"]
+	path = resources/templating/mixed/components/cta
+	url = git@github.com:Veams/veams-component-cta.git
+    branch = dev
+[submodule "resources/templating/mixed/components/rte"]
+	path = resources/templating/mixed/components/rte
+	url = git@github.com:Veams/veams-component-rte.git
+    branch = dev
+[submodule "resources/templating/mixed/components/figure"]
+	path = resources/templating/mixed/components/figure
+	url = git@github.com:Veams/veams-component-figure.git
+    branch = dev

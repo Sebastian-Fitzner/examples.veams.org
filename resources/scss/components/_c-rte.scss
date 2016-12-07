@@ -66,6 +66,7 @@ Global Styles
 
 	em {
 		font-style: italic;
+		color: lighten(color(highlight-dark), 10);
 	}
 
 	ol {

@@ -7,10 +7,6 @@ $min-width: false; // This variable will be used in veams-sass
 /* ===================================================
 BOURBON NEAT SETTINGS
 =================================================== */
-$neat-grid: (
-	columns: 12,
-	gutter: 36px
-);
 
 $max-width: 1404px !default;
 
@@ -37,6 +33,12 @@ $bp: (
 	'tablet-l': $bp-tablet-l,
 	'desktop-m': $bp-desktop-m,
 	'desktop-l': $bp-desktop-l
+);
+
+$grid-breakpoints-defaults: $bp;
+$grid-defaults: (
+	columns: 12,
+	gutter: 36px
 );
 
 /* ---------------------------------------------------

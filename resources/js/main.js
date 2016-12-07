@@ -7,6 +7,7 @@ import Nav from './modules/nav/nav';
 import Accordion from '../templating/mixed/components/accordion/js/accordion';
 import FormAjax from '../templating/mixed/components/form/js/form-ajax';
 import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
+import CTA from '../templating/mixed/components/cta/js/cta';
 
 
 // @INSERTPOINT :: @ref: js-import
@@ -58,6 +59,11 @@ class Core {
 
 		// @INSERTPOINT :: @ref: js-init-once-v3
 
+		// CUSTOM
+		App.Vent.on('cta:alert', (obj) => {
+			alert(obj.options.data);
+		});
+
 	}
 
 	preRender() {
@@ -65,6 +71,14 @@ class Core {
 	}
 
 	render(context) {
+		/**
+		 * Init Navigation
+		 */
+		Helpers.loadModule({
+			domName: 'cta',
+			module: CTA,
+			context: context
+		});
 		/**
 		 * Init Navigation
 		 */
