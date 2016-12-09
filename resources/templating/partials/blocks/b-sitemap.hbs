@@ -15,14 +15,10 @@ Important Notes:
 <nav class="b-sitemap">
 	{{! WrapWith START: Accordion }}
 	{{#wrapWith "c-accordion" settings=(JSONParse '{
-		"contextClass": "sidenav",
-		"jsOptions": [
-			{
-				"jsKey": "openAllOnInit",
-				"jsValue": true,
-				"jsObject": true
-			}
-		]
+		"accContextClass": "sidenav",
+		"accJsOptions": {
+			"openAllOnInit": true
+		}
 	}')}}
 
 		{{#each collections.type}}

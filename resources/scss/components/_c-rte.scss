@@ -69,6 +69,33 @@ Global Styles
 		color: lighten(color(highlight-dark), 10);
 	}
 
+	blockquote {
+		font-size: 2rem;
+		line-height: 120%;
+		font-style: italic;
+		position: relative;
+		max-width: 70%;
+		text-align: left;
+		margin-left: 60px;
+		margin-top: $margin-base * 2;
+		margin-bottom: $margin-base * 2;
+
+		p {
+			font-weight: 700;
+			color: lighten(map-get($colors, highlight-dark), 10);
+		}
+
+		&::before {
+			content: '"';
+			display: inline;
+			font-weight: 700;
+			font-size: 11rem;
+			position: absolute;
+			left: -60px;
+			top: 25px;
+		}
+	}
+
 	ol {
 		counter-reset: listCounter;
 		margin-left: 3rem;

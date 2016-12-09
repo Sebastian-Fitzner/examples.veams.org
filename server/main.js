@@ -18,7 +18,6 @@ var mangonyServer = new Mangony(deepExtend(mangonyOptions.options, mangonyDevOpt
  */
 mangonyServer.render();
 
-
 /**
  * parameter passing from grunt
  * @type {Array}

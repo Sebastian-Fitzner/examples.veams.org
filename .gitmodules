@@ -54,3 +54,7 @@
 	path = resources/templating/mixed/components/figure
 	url = git@github.com:Veams/veams-component-figure.git
     branch = dev
+[submodule "resources/templating/mixed/components/quote"]
+	path = resources/templating/mixed/components/quote
+	url = git@github.com:Veams/veams-component-quote.git
+	branch = dev
