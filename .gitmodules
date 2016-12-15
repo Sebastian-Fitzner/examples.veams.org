@@ -62,3 +62,7 @@
 	path = resources/templating/mixed/utilities/storage
 	url = git@github.com:Veams/veams-utility-storage.git
 	branch = dev
+[submodule "resources/templating/mixed/components/slide-fox"]
+	path = resources/templating/mixed/components/slide-fox
+	url = git@github.com:Veams/veams-component-slide-fox
+	branch = dev
