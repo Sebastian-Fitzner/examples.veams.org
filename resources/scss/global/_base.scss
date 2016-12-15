@@ -51,6 +51,15 @@ a {
 	@include link-std;
 }
 
+hr {
+	margin-top: $margin-base * 6;
+	background-color: transparent;
+	border-top: 1px solid $color-grey-light;
+	border-bottom: 2px solid #fff;
+	border-right: none 0;
+	border-left: none 0;
+}
+
 /* ---------------------------------------------------
 Demo purpose styles
 --------------------------------------------------- */

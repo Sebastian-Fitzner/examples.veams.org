@@ -175,8 +175,19 @@
 						{{#each variations}}
 							<div class="docs__demo-section-item">
 								{{#if docs.variationName}}
+									{{#unless @first}}
+										<hr class="docs__hr">
+									{{/unless}}
 									<div class="docs__demo-variation-headline is-container">
 										<h4 class="docs__demo-section-headline is-bg-light is-centered is-container">{{docs.variationName}}</h4>
+										{{#if docs.variationDescription}}
+											<div class="docs__demo-section-description-wrapper">
+												<div class="docs__demo-section-info">
+													<span class="docs__demo-section-icon"></span>
+												</div>
+												<p class="docs__demo-section-description">{{docs.variationDescription}}</p>
+											</div>
+										{{/if}}
 									</div>
 								{{/if}}
 								{{#unless docs.unwrapVariation}}
