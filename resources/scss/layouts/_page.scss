@@ -8,6 +8,7 @@
 	position: fixed;
 	overflow-y: auto;
 	width: 300px;
+	z-index: 1;
 
 	.page-left__container {
 		padding-right: $margin-base * 3;

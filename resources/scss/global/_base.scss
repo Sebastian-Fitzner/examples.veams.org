@@ -43,10 +43,6 @@ code {
 	font-family: Courier, Monospace, "Courier New", sans-serif;
 }
 
-pre {
-	@include float;
-}
-
 a {
 	@include link-std;
 }

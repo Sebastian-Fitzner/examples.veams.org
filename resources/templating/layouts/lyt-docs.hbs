@@ -2,7 +2,8 @@
 	{{#content "details"}}
 		<div class="docs">
 			{{! WrapWith START: Section Technical Documentation }}
-			{{#wrapWith "u-section-wrapper" headline="Technical Details" anchor-id="technical-details" headerCenter=true headerClasses="is-light"}}
+			{{#wrapWith "u-section-wrapper" headline="Technical Details" anchor-id="technical-details" headerCenter=true
+			            headerClasses="is-light"}}
 				{{#wrapWith "u-grid-row"}}
 				{{! WrapWith START: Grid Col }}
 					{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12"}}
@@ -24,38 +25,42 @@
 								{{#wrapWith "c-accordion__item" accItemId="data-file" accButton="Data File"}}
 									<div class="docs__code-item">
 										{{#highlight "json" escapeHTML=true}}
-											{{{embeding (buildPath @root.currentPage.dirname (buildPath "data" (concat this.contextData ".json")) goUp=1) }}}
+											{{{embeding
+													(buildPath @root.currentPage.dirname (buildPath "data" (concat this.contextData ".json")) goUp=1) }}}
 										{{/highlight}}
 									</div>
 								{{/wrapWith}}
 							{{/if}}
-							{{#wrapWith "c-accordion__item" accItemId="templates" accButton="Templates"}}
+							{{#unless hideTemplates}}
+								{{#wrapWith "c-accordion__item" accItemId="templates" accButton="Templates"}}
 
-								{{#unless hideRootTemplate}}
-									<h4 class="docs__demo-section-headline">{{@root.currentPage.filename}}</h4>
-									<div class="docs__code-item" data-js-module="content-editor"
-									     data-filepath="{{buildPath @root.currentPage.dirname  @root.currentPage.basename}}">
-										{{#getData from=@root.currentPage.filename typeof="partial"}}
-											{{#highlight "hbs" escapeHTML=true}}
-												{{{this.parsed.content}}}
-											{{/highlight}}
-										{{/getData}}
-									</div>
-								{{/unless}}
-
-								{{#if this.subTemplates}}
-									{{#each this.subTemplates}}
-										<h4 class="docs__demo-section-headline">{{this}}.hbs</h4>
-										<div class="docs__code-item">
-											{{#highlight "hbs" escapeHTML=true}}
-												{{#getData from=this typeof="partial"}}
+									{{#unless hideRootTemplate}}
+										<h4 class="docs__demo-section-headline">{{@root.currentPage.filename}}</h4>
+										<div class="docs__code-item" data-js-module="content-editor"
+										     data-filepath="{{buildPath @root.currentPage.dirname
+										                                @root.currentPage.basename}}">
+											{{#getData from=@root.currentPage.filename typeof="partial"}}
+												{{#highlight "hbs" escapeHTML=true}}
 													{{{this.parsed.content}}}
-												{{/getData}}
-											{{/highlight}}
+												{{/highlight}}
+											{{/getData}}
 										</div>
-									{{/each}}
-								{{/if}}
-							{{/wrapWith}}
+									{{/unless}}
+
+									{{#if this.subTemplates}}
+										{{#each this.subTemplates}}
+											<h4 class="docs__demo-section-headline">{{this}}.hbs</h4>
+											<div class="docs__code-item">
+												{{#highlight "hbs" escapeHTML=true}}
+													{{#getData from=this typeof="partial"}}
+														{{{this.parsed.content}}}
+													{{/getData}}
+												{{/highlight}}
+											</div>
+										{{/each}}
+									{{/if}}
+								{{/wrapWith}}
+							{{/unless}}
 							{{#if this.scssFiles}}
 								{{#wrapWith "c-accordion__item" accItemId="styles" accButton="Styles"}}
 									{{#glob @root.currentPage.dirname}}
@@ -64,7 +69,8 @@
 										<h4 class="is-hidden">{{this}}</h4>
 										<div class="docs__code-item">
 											{{#highlight "scss" escapeHTML=true}}
-												{{{embeding (buildPath (buildPath @root.currentPage.dirname 'scss' goUp=1) this) }}}
+												{{{embeding
+														(buildPath (buildPath @root.currentPage.dirname 'scss' goUp=1) this) }}}
 											{{/highlight}}
 										</div>
 									{{/each}}
@@ -77,19 +83,30 @@
 										<h4 class="is-hidden">{{this}}</h4>
 										<div class="docs__code-item">
 											{{#highlight "js" escapeHTML=true}}
-												{{{embeding (buildPath (buildPath @root.currentPage.dirname 'js' goUp=1) this) }}}
+												{{{embeding
+														(buildPath (buildPath @root.currentPage.dirname 'js' goUp=1) this) }}}
 											{{/highlight}}
 										</div>
 									{{/each}}
 								{{/wrapWith}}
 							{{/if}}
 
-							{{#wrapWith "c-accordion__item" accItemId="output" accButton="HTML Output"}}
-								{{#if variations}}
-									{{#each variations}}
-										{{#if docs.variationName}}
-											<h4 class="docs__demo-section-headline">{{docs.variationName}}</h4>
-										{{/if}}
+							{{#unless hideOutput}}
+								{{#wrapWith "c-accordion__item" accItemId="output" accButton="HTML Output"}}
+									{{#if variations}}
+										{{#each variations}}
+											{{#if docs.variationName}}
+												<h4 class="docs__demo-section-headline">{{docs.variationName}}</h4>
+											{{/if}}
+											<div class="docs__code-item">
+												{{#highlight "html"}}
+													{{#beautifyHTML}}
+														{{{yield}}}
+													{{/beautifyHTML}}
+												{{/highlight}}
+											</div>
+										{{/each}}
+									{{else}}
 										<div class="docs__code-item">
 											{{#highlight "html"}}
 												{{#beautifyHTML}}
@@ -97,17 +114,9 @@
 												{{/beautifyHTML}}
 											{{/highlight}}
 										</div>
-									{{/each}}
-								{{else}}
-									<div class="docs__code-item">
-										{{#highlight "html"}}
-											{{#beautifyHTML}}
-												{{{yield}}}
-											{{/beautifyHTML}}
-										{{/highlight}}
-									</div>
-								{{/if}}
-							{{/wrapWith}}
+									{{/if}}
+								{{/wrapWith}}
+							{{/unless}}
 
 							{{#if imagePresets}}
 								{{#wrapWith "c-accordion__item" accItemId="images" accButton="Image Presets"}}
@@ -117,20 +126,20 @@
 												<h4 class="docs__demo-section-headline">{{uppercase presetName}}</h4>
 												<table class="c-table--zebra" data-css="c-table">
 													<thead class="table__head">
-													<tr class="table__row is-header">
-														<th class="table__headline is-th">Breakpoints</th>
-														<th class="table__headline is-th">Width</th>
-														<th class="table__headline is-th">Height</th>
-													</tr>
+														<tr class="table__row is-header">
+															<th class="table__headline is-th">Breakpoints</th>
+															<th class="table__headline is-th">Width</th>
+															<th class="table__headline is-th">Height</th>
+														</tr>
 													</thead>
 													<tbody class="table__body">
-													{{#each data}}
-														<tr class="table__row">
-															<td class="table__cell is-title is-td"> {{this.breakpoint}}</td>
-															<td class="table__cell is-td"> {{this.width}}</td>
-															<td class="table__cell is-td"> {{this.height}}</td>
-														</tr>
-													{{/each}}
+														{{#each data}}
+															<tr class="table__row">
+																<td class="table__cell is-title is-td"> {{this.breakpoint}}</td>
+																<td class="table__cell is-td"> {{this.width}}</td>
+																<td class="table__cell is-td"> {{this.height}}</td>
+															</tr>
+														{{/each}}
 													</tbody>
 												</table>
 											{{/each}}
@@ -149,12 +158,18 @@
 	{{#content "demo-top"}}
 	{{! WrapWith START:  }}
 		{{#wrapWith "u-section-wrapper" is-centered=true bg-color="primary-medium" headline="Demo Section"
-		anchor-id="demo-section" headerClasses="is-light"}}
+		            anchor-id="demo-section" headerClasses="is-light"}}
 			<div class="docs">
 				{{#wrapWith "u-grid-row"}}
 				{{! WrapWith START: Grid Col }}
 					{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12"}}
-						<p class="is-large-tf">Each variation will be presented in the following sections.</p>
+						<p class="is-large-tf">
+							{{#if hideOutput}}
+								This utility has no visible output
+							{{else}}
+								Each variation will be presented in the following sections.
+							{{/if}}
+						</p>
 					{{/wrapWith}}
 				{{/wrapWith}}
 			</div>
@@ -164,9 +179,9 @@
 	{{#content "demo-bottom"}}
 	{{! WrapWith START:  }}
 		{{#wrapWith "u-section-wrapper"
-		anchor-id="demo-examples"
-		fullWidth=true
-		headerCenter=true
+		            anchor-id="demo-examples"
+		            fullWidth=true
+		            headerCenter=true
 		}}
 			<div class="docs">
 				{{! WrapWith START: Section Demo }}
@@ -193,12 +208,12 @@
 								{{#unless docs.unwrapVariation}}
 								{{! WrapWith START: Section }}
 									{{#wrapWith "u-section-wrapper"
-									bgColor=docs.sectionBgColor
-									fullWidth=docs.sectionFullWidth
-									center=docs.sectionCenter
-									padding=docs.sectionPadding
-									header=sectionHeader
-									footer=sectionFooter
+									            bgColor=docs.sectionBgColor
+									            fullWidth=docs.sectionFullWidth
+									            center=docs.sectionCenter
+									            padding=docs.sectionPadding
+									            header=sectionHeader
+									            footer=sectionFooter
 									}}
 										{{{yield}}}
 									{{/wrapWith}}
@@ -211,12 +226,12 @@
 					{{else}}
 					{{! WrapWith START: Section }}
 						{{#wrapWith "u-section-wrapper"
-						bgColor=docs.sectionBgColor
-						fullWidth=docs.sectionFullWidth
-						centered=docs.sectionCentered
-						padding=docs.sectionPadding
-						header=sectionHeader
-						footer=sectionFooter
+						            bgColor=docs.sectionBgColor
+						            fullWidth=docs.sectionFullWidth
+						            centered=docs.sectionCentered
+						            padding=docs.sectionPadding
+						            header=sectionHeader
+						            footer=sectionFooter
 						}}
 							{{{yield}}}
 						{{/wrapWith}}
