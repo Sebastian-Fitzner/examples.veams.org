@@ -66,3 +66,7 @@
 	path = resources/templating/mixed/components/slide-fox
 	url = git@github.com:Veams/veams-component-slide-fox
 	branch = dev
+[submodule "resources/templating/mixed/components/pagination"]
+	path = resources/templating/mixed/components/pagination
+	url = git@github.com:Veams/veams-component-pagination.git
+	branch = dev
