@@ -9,6 +9,7 @@ import FormAjax from '../templating/mixed/components/form/js/form-ajax';
 import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
 import CTA from '../templating/mixed/components/cta/js/cta';
 import Slider from '../templating/mixed/components/slider/js/slider';
+import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
 
 
 // @INSERTPOINT :: @ref: js-import
@@ -122,6 +123,15 @@ class Core {
 		Helpers.loadModule({
 			domName: 'slider',
 			module: Slider,
+			context: context
+		});
+
+		/**
+		 * Init Slider
+		 */
+		Helpers.loadModule({
+			domName: 'slide-fox',
+			module: SlideFox,
 			context: context
 		});
 
