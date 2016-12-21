@@ -70,3 +70,7 @@
 	path = resources/templating/mixed/components/pagination
 	url = git@github.com:Veams/veams-component-pagination.git
 	branch = dev
+[submodule "resources/templating/mixed/utilities/type-ahead"]
+	path = resources/templating/mixed/utilities/type-ahead
+	url = git@github.com:Veams/veams-utility-type-ahead
+	branch = dev

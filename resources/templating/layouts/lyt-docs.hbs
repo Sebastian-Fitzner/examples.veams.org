@@ -80,11 +80,24 @@
 							{{#if this.jsFiles}}
 								{{#wrapWith "c-accordion__item" accItemId="js" accButton="JavaScript"}}
 									{{#each this.jsFiles}}
-										<h4 class="is-hidden">{{this}}</h4>
+										<h4 class="docs__demo-section-headline">{{this}}</h4>
 										<div class="docs__code-item">
 											{{#highlight "js" escapeHTML=true}}
 												{{{embeding
 														(buildPath (buildPath @root.currentPage.dirname 'js' goUp=1) this) }}}
+											{{/highlight}}
+										</div>
+									{{/each}}
+								{{/wrapWith}}
+							{{/if}}
+
+							{{#if this.jsTemplates}}
+								{{#wrapWith "c-accordion__item" accItemId="jsTemplates" accButton="JavaScript Templates"}}
+									{{#each this.jsTemplates}}
+										<h4 class="docs__demo-section-headline">{{this}}</h4>
+										<div class="docs__code-item">
+											{{#highlight "hbs" escapeHTML=true}}
+												{{{embeding	(buildPath (buildPath @root.currentPage.dirname 'js' goUp=1) this) }}}
 											{{/highlight}}
 										</div>
 									{{/each}}
