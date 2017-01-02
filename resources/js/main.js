@@ -1,4 +1,5 @@
 // Main Requirements
+import './immediate';
 import App from 'app';
 const Helpers = App.Helpers;
 
@@ -10,6 +11,7 @@ import FormDatepicker from '../templating/mixed/components/form/js/form-datepick
 import CTA from '../templating/mixed/components/cta/js/cta';
 import Slider from '../templating/mixed/components/slider/js/slider';
 import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
+import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
 
 
 // @INSERTPOINT :: @ref: js-import
@@ -57,7 +59,7 @@ class Core {
 		/**
 		 * Init overlay
 		 */
-		// new Overlay();
+		new Overlay();
 
 		// @INSERTPOINT :: @ref: js-init-once-v3
 

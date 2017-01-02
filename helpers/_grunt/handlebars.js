@@ -13,7 +13,10 @@ module.exports = {
 			commonjs: true
 		},
 		files: {
-			"<%= paths.src %>/js/templates/templates.js": ["<%= paths.src %>/js/modules/**/*.hbs"]
+			"<%= paths.src %>/js/templates/templates.js": [
+					"<%= paths.src %>/js/modules/**/*.hbs",
+					"<%= paths.src %>/templating/mixed/**/templates/*.hbs"
+			]
 		}
 	}
 };
