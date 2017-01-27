@@ -4,7 +4,7 @@ window["App"] = window["App"] || {};
 window["App"]["Templates"] = window["App"]["Templates"] || {};
 
 window["App"]["Templates"]["OVERLAY"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"b-overlay\" data-css=\"b-overlay\" data-js-atom=\"overlay\">\r\n	<div class=\"overlay__wrapper\">\r\n		<button class=\"overlay__close\" data-js-atom=\"overlay-close\"></button>\r\n		<div class=\"overlay__content\">\r\n			<div class=\"overlay__inner\" data-js-atom=\"overlay-content\">\r\n\r\n			</div>\r\n		</div>\r\n	</div>\r\n	<div class=\"overlay__mask\" data-js-atom=\"overlay-mask\"></div>\r\n</div>";
+    return "<div class=\"b-overlay\" data-css=\"b-overlay\" data-js-atom=\"overlay\">\n	<div class=\"overlay__wrapper\">\n		<button class=\"overlay__close\" data-js-atom=\"overlay-close\"></button>\n		<div class=\"overlay__content\">\n			<div class=\"overlay__inner\" data-js-atom=\"overlay-content\">\n\n			</div>\n		</div>\n	</div>\n	<div class=\"overlay__mask\" data-js-atom=\"overlay-mask\"></div>\n</div>";
 },"useData":true});
 
 window["App"]["Templates"]["TYPEAHEAD__ITEM"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -34,7 +34,7 @@ window["App"]["Templates"]["TYPEAHEAD"] = Handlebars.template({"1":function(cont
   return "<div class=\"c-type-ahead--"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.typeAheadContextClass : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.typeAheadClass : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\" data-css=\"c-type-ahead\">\r\n	<ul class=\"type-ahead__list\" data-js-atom=\"type-ahead-list\"></ul>\r\n</div>";
+    + "\" data-css=\"c-type-ahead\">\n	<ul class=\"type-ahead__list\" data-js-atom=\"type-ahead-list\"></ul>\n</div>";
 },"useData":true});
 
 return window["App"]["Templates"];
