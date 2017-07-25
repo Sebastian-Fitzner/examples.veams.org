@@ -9,13 +9,13 @@
  * @author
  */
 
-import App from 'app';
-import AppModule from 'app-module';
+import {App, Veams} from 'app';
+import VeamsComponent from 'veams/src/js/common/component';
 
-const $ = App.$;
+const $ = Veams.$;
 
 // Creates a new view class object
-class Nav extends AppModule {
+class Nav extends VeamsComponent {
 	/**
 	 * Constructor for our class
 	 *
@@ -29,7 +29,7 @@ class Nav extends AppModule {
 		let options = {
 			activeClass: 'is-active',
 			scrollClass: 'isnt-scrollable',
-			navItems: '[data-js-atom="nav-item"]'
+			navItems: '[data-js-item="nav-item"]'
 		};
 
 		super(obj, options);
@@ -37,8 +37,6 @@ class Nav extends AppModule {
 
 	initialize(obj) {
 		this.offset = App.settings.height;
-
-		super.initialize();
 	}
 
 	/**
@@ -46,7 +44,7 @@ class Nav extends AppModule {
 	 */
 	bindEvents() {
 		this.$el.on('click touchstart', this.options.navItems, this.toggleNavigation.bind(this));
-		App.Vent.on(App.EVENTS.nav.toggle, this.toggleNavigation.bind(this))
+		Veams.Vent.on(Veams.EVENTS.nav.toggle, this.toggleNavigation.bind(this))
 	}
 
 	// Renders the view's template to the UI

@@ -1,164 +1,74 @@
 // Main Requirements
-import './immediate';
-import App from 'app';
-const Helpers = App.Helpers;
+import {Veams} from 'app';
 
 // ES6 Modules
 import Nav from './modules/nav/nav';
 import Accordion from '../templating/mixed/components/accordion/js/accordion';
-import FormAjax from '../templating/mixed/components/form/js/form-ajax';
-import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
 import CTA from '../templating/mixed/components/cta/js/cta';
-import Slider from '../templating/mixed/components/slider/js/slider';
-import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
-import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
-
-
+// import FormAjax from '../templating/mixed/components/form/js/form-ajax';
+// import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
+// import Slider from '../templating/mixed/components/slider/js/slider';
+// import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
+// import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
 // @INSERTPOINT :: @ref: js-import
 
-// Vars
-const $ = App.$;
 
-'use strict';
-
-// Main Functionality
-class Core {
-	constructor() {
-		this.initialize();
-	}
-
+Veams.modules.register([
 	/**
-	 * Initialize our core functionality
-	 * This function will only be executed once.
+	 * Init Navigation
 	 */
-	initialize() {
-		console.log('App initialized with version: ', App.version);
-
-		/**
-		 * Detect Touch
-		 */
-		if (!App.support.touch) {
-			$('html').addClass('no-touch');
-		} else {
-			$('html').addClass('touch');
-		}
-
-		// Redirect
-		App.Vent.on(App.EVENTS.DOMredirect, (obj) => {
-			if (!obj && !obj.url) throw new Error('Object is not defined. Please provide an url in your object!');
-
-			// Redirect to page
-			window.location.href = String(obj.url);
-		});
-
-		/**
-		 * Save settings in App
-		 */
-		App.settings = {};
-
-		/**
-		 * Init overlay
-		 */
-		new Overlay();
-
-		// @INSERTPOINT :: @ref: js-init-once-v3
-
-		// CUSTOM
-		App.Vent.on('cta:alert', (obj) => {
-			alert(obj.options.data);
-		});
-
-	}
-
-	preRender() {
-		Helpers.saveDOM();
-	}
-
-	render(context) {
-		/**
-		 * Init Navigation
-		 */
-		Helpers.loadModule({
-			domName: 'cta',
-			module: CTA,
-			context: context
-		});
-		/**
-		 * Init Navigation
-		 */
-		Helpers.loadModule({
-			domName: 'nav',
-			module: Nav,
-			context: context
-		});
-
-		/**
-		 * Init Accordion
-		 */
-		Helpers.loadModule({
-			domName: 'accordion',
-			module: Accordion,
-			context: context
-		});
-
-		/**
-		 * Init Form
-		 */
-		Helpers.loadModule({
-			domName: 'form-ajax',
-			module: FormAjax,
-			context: context
-		});
-
-		/**
-		 * Init Datepicker
-		 */
-		Helpers.loadModule({
-			domName: 'form-datepicker',
-			module: FormDatepicker,
-			context: context
-		});
-
-		/**
-		 * Init Slider
-		 */
-		Helpers.loadModule({
-			domName: 'slider',
-			module: Slider,
-			context: context
-		});
-
-		/**
-		 * Init Slider
-		 */
-		Helpers.loadModule({
-			domName: 'slide-fox',
-			module: SlideFox,
-			context: context
-		});
-
-
-		// @INSERTPOINT :: @ref: js-init-v3
-
-	}
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-	let core = new Core();
-
+	{
+		namespace: 'nav',
+		module: Nav
+	},
 	/**
-	 * Render modules
+	 * Init CTA
 	 */
-	core.preRender();
-	core.render(document);
-
+	{
+		namespace: 'cta',
+		module: CTA
+	},
 	/**
-	 * Initialize modules which are loaded after initial load
-	 * via custom event 'DOMchanged'
+	 * Init Accordion
 	 */
-	App.Vent.on(App.EVENTS.DOMchanged, (context) => {
-		console.log('Dom has changed. Initialising new modules in: ', context);
-		core.preRender();
-		core.render(context);
-	});
-});
+	{
+		namespace: 'accordion',
+		module: Accordion
+	},
+	//
+	// /**
+	//  * Init Form
+	//  */
+	// {
+	// 	namespace: 'form-ajax',
+	// 	module: FormAjax
+	// },
+	//
+	// /**
+	//  * Init Datepicker
+	//  */
+	// {
+	// 	namespace: 'form-datepicker',
+	// 	module: FormDatepicker
+	// },
+	//
+	// /**
+	//  * Init Slider
+	//  */
+	// {
+	// 	namespace: 'slider',
+	// 	module: Slider
+	// },
+	//
+	// /**
+	//  * Init Slider
+	//  */
+	// {
+	// 	namespace: 'slide-fox',
+	// 	module: SlideFox
+	// }
+// @INSERTPOINT :: @ref: js-init-v5
+]);
+
+// new Overlay();
+

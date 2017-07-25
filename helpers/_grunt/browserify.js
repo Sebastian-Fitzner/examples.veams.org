@@ -1,15 +1,15 @@
-var externalLibs = [
-	'exoskeleton',
+'use strict';
+
+const externalLibs = [
+	'jquery',
 	'handlebars',
 	'picturefill',
-	'lazysizes',
-	'veams-query'
+	'lazysizes'
 ];
 
-var internalLibs = [
-	'./resources/js/utils/events.js:events',
-	'./resources/js/veams-js/js/app.js:app',
-	'./resources/js/veams-js/js/modules/_global/module.js:app-module'
+const internalLibs = [
+	'./resources/js/app.js:app',
+	'./resources/js/utils/events.js:events'
 ];
 
 module.exports = {
@@ -27,14 +27,14 @@ module.exports = {
 			['aliasify',
 				{
 					aliases: {
-						'backbone': 'exoskeleton'
 					},
 					global: true,
 					verbose: true
 				}
 			]
 		],
-		ignore: ['jquery', 'underscore']
+		ignore: [
+		]
 	},
 	vendor: {
 		src: ['.'],
