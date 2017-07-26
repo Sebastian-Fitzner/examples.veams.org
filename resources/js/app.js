@@ -1,5 +1,5 @@
 // Global dependencies 
-import $ from "jquery";
+import $ from "veams-query";
 import 'lazysizes';
 import VeamsCore from 'veams/src/js/generics/core';
 import VeamsLogger from 'veams/src/js/plugins/logger';
@@ -56,6 +56,13 @@ Veams.onInitialize(() => {
 	window.onscroll = Veams.helpers.throttle((e) => {
 		Veams.Vent.trigger(Veams.EVENTS.scroll, e);
 	}, 200);
+
+	/**
+	 * Devmode features
+	 */
+	if (Veams.devmode) {
+		window.Veams = Veams;
+	}
 });
 
 export {App, Veams};
