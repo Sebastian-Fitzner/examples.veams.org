@@ -58,8 +58,13 @@ class Nav extends VeamsComponent {
 	}
 
 	toggleNavigation(e) {
-		this.$el.toggleClass(this.options.activeClass);
-		$('body').toggleClass(this.options.scrollClass);
+		if (this.$el.hasClass(this.options.activeClass)) {
+			this.$el.removeClass(this.options.activeClass);
+			$('body').removeClass(this.options.scrollClass);
+		} else {
+			this.$el.addClass(this.options.activeClass);
+			$('body').addClass(this.options.scrollClass);
+		}
 	}
 }
 

@@ -29,7 +29,7 @@ sitemap: navigation
 								{{! WrapWith START: Grid Col }}
 									{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12 is-col-tablet-p-6"}}
 										<div class="c-box--default" data-css="c-box">
-											<a class="box__link" href="components/accordion/partials/c-accordion-usage">
+											<a class="box__link" href="components/accordion/partials/c-accordion-usage{{#unless @root.servermode}}.html{{/unless}}">
 												<div class="box__content-wrapper is-headline-wrapper">
 													<h2 class="box__headline">
 														Go To<span> Components</span>
@@ -47,7 +47,7 @@ sitemap: navigation
 									{{! WrapWith START: Grid Col }}
 									{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12 is-col-tablet-p-6"}}
 										<div class="c-box--default" data-css="c-box">
-											<a class="box__link" href="utilities/grid/partials/u-grid-usage">
+											<a class="box__link" href="utilities/grid/partials/u-grid-usage{{#unless @root.servermode}}.html{{/unless}}">
 												<div class="box__content-wrapper is-headline-wrapper">
 													<h2 class="box__headline">
 														Go To<span> Utilities</span>
