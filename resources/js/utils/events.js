@@ -4,7 +4,9 @@
  * @author: Sebastian Fitzner
  */
 
-let EVENTS = {};
+let EVENTS = {
+	focus: 'focus'
+};
 
 /**
  * Events Nav
@@ -34,6 +36,20 @@ EVENTS.form = {
  */
 EVENTS.overlay = {
 	open: 'overlay:open'
+};
+
+/**
+ * Events for Toggler
+ */
+EVENTS.toggler = {
+	open: 'toggler:open'
+};
+
+/**
+ * Events for Typeahead
+ */
+EVENTS.typeahead = {
+	suggestionChoosen: 'typeahead:suggestionChoosen'
 };
 
 // @INSERTPOINT :: @ref: js-events

@@ -1,7 +1,7 @@
 'use strict';
 
 const externalLibs = [
-	'veams-query',
+	'jquery',
 	'handlebars',
 	'picturefill',
 	'lazysizes'

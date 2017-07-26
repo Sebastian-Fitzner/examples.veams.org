@@ -77,4 +77,8 @@
 [submodule "resources/templating/mixed/components/overlay"]
 	path = resources/templating/mixed/components/overlay
 	url = git@github.com:Veams/veams-component-overlay.git
-	branch = master
+	branch = dev
+[submodule "resources/templating/mixed/components/toggler"]
+	path = resources/templating/mixed/components/toggler
+	url = https://github.com/Veams/veams-component-toggler.git
+	branch = dev

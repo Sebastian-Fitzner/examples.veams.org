@@ -1,5 +1,5 @@
 // Main Requirements
-import {Veams, App} from 'app';
+import {Veams} from 'app';
 
 // ES6 Modules
 import Nav from './modules/nav/nav';
@@ -10,6 +10,9 @@ import FormDatepicker from '../templating/mixed/components/form/js/form-datepick
 import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
 import Slider from '../templating/mixed/components/slider/js/slider';
 import Overlay from '../templating/mixed/components/overlay/js/overlay';
+import Typeahead from '../templating/mixed/utilities/type-ahead/js/typeahead';
+import Toggler from '../templating/mixed/components/toggler/js/toggler';
+// import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
 // @INSERTPOINT :: @ref: js-import
 
 Veams.modules.register([
@@ -62,8 +65,20 @@ Veams.modules.register([
 		namespace: 'slider',
 		module: Slider
 	},
-	//
-
+	/**
+	 * Init Typeahead
+	 */
+	{
+		namespace: 'typeahead',
+		module: Typeahead
+	},
+	/**
+	 * Init Toggler
+	 */
+	{
+		namespace: 'toggler',
+		module: Toggler
+	}
 // @INSERTPOINT :: @ref: js-init-v5
 ]);
 
