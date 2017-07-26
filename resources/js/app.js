@@ -1,13 +1,16 @@
 // Global dependencies 
 import $ from "veams-query";
 import 'lazysizes';
+import Handlebars from 'handlebars/runtime';
 import VeamsCore from 'veams/src/js/generics/core';
 import VeamsLogger from 'veams/src/js/plugins/logger';
 import VeamsDOM from 'veams/src/js/plugins/dom';
 import VeamsVent from 'veams/src/js/plugins/vent';
 import VeamsModules from 'veams/src/js/plugins/modules';
 import VeamsMediaQueryHandler from 'veams/src/js/plugins/media-query-handler';
+import VeamsTemplater from 'veams/src/js/plugins/templater';
 import EVENTS from './utils/events';
+import Templates from './templates/templates';
 
 let App = {
 	settings: {},
@@ -44,6 +47,11 @@ Veams.onInitialize(() => {
 
 	// Media Query Handler Plugin
 	Veams.use(VeamsMediaQueryHandler);
+
+	Veams.use(VeamsTemplater, {
+		engine: Handlebars,
+		templates: Templates
+	});
 
 
 	Veams.Vent.on('cta:alert', (obj) => {

@@ -74,7 +74,7 @@
 	path = resources/templating/mixed/utilities/type-ahead
 	url = git@github.com:Veams/veams-utility-type-ahead
 	branch = dev
-[submodule "resources/templating/mixed/blocks/overlay"]
-	path = resources/templating/mixed/blocks/overlay
-	url = git@github.com:Veams/veams-block-overlay
-	branch = dev
+[submodule "resources/templating/mixed/components/overlay"]
+	path = resources/templating/mixed/components/overlay
+	url = git@github.com:Veams/veams-component-overlay.git
+	branch = master

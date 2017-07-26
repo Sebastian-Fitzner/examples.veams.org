@@ -1,5 +1,5 @@
 // Main Requirements
-import {Veams} from 'app';
+import {Veams, App} from 'app';
 
 // ES6 Modules
 import Nav from './modules/nav/nav';
@@ -9,9 +9,8 @@ import FormAjax from '../templating/mixed/components/form/js/form-ajax';
 import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
 import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
 import Slider from '../templating/mixed/components/slider/js/slider';
-// import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
+import Overlay from '../templating/mixed/components/overlay/js/overlay';
 // @INSERTPOINT :: @ref: js-import
-
 
 Veams.modules.register([
 	/**
@@ -68,5 +67,7 @@ Veams.modules.register([
 // @INSERTPOINT :: @ref: js-init-v5
 ]);
 
-// new Overlay();
+new Overlay({
+	appInstance: Veams
+});
 
