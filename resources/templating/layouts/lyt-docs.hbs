@@ -8,11 +8,7 @@
 				{{! WrapWith START: Grid Col }}
 					{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12"}}
 					{{! WrapWith START: Accordion }}
-						{{#wrapWith "c-accordion" settings=(JSONParse '{
-						    "accJsOptions": {
-                                "openIndex": 0
-                            }
-						}')}}
+						{{#wrapWith "c-accordion"}}
 						{{! WrapWith START: Item }}
 							{{#wrapWith "c-accordion__item" accItemId="readme-file" accButton="README"}}
 								<div class="docs__code-item">
