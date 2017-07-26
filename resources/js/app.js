@@ -49,6 +49,13 @@ Veams.onInitialize(() => {
 	Veams.Vent.on('cta:alert', (obj) => {
 		alert(obj.options.data);
 	});
+
+	// Custom Events
+
+	// Trigger global resize event
+	window.onscroll = Veams.helpers.throttle((e) => {
+		Veams.Vent.trigger(Veams.EVENTS.scroll, e);
+	}, 200);
 });
 
 export {App, Veams};

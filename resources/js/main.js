@@ -5,10 +5,10 @@ import {Veams} from 'app';
 import Nav from './modules/nav/nav';
 import Accordion from '../templating/mixed/components/accordion/js/accordion';
 import CTA from '../templating/mixed/components/cta/js/cta';
-// import FormAjax from '../templating/mixed/components/form/js/form-ajax';
-// import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
-// import Slider from '../templating/mixed/components/slider/js/slider';
-// import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
+import FormAjax from '../templating/mixed/components/form/js/form-ajax';
+import FormDatepicker from '../templating/mixed/components/form/js/form-datepicker';
+import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
+import Slider from '../templating/mixed/components/slider/js/slider';
 // import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
 // @INSERTPOINT :: @ref: js-import
 
@@ -35,38 +35,36 @@ Veams.modules.register([
 		namespace: 'accordion',
 		module: Accordion
 	},
+	/**
+	 * Init Form
+	 */
+	{
+		namespace: 'form-ajax',
+		module: FormAjax
+	},
+	/**
+	 * Init Datepicker
+	 */
+	{
+		namespace: 'form-datepicker',
+		module: FormDatepicker
+	},
+	/**
+	 * Init Slider
+	 */
+	{
+		namespace: 'slide-fox',
+		module: SlideFox
+	},
+	/**
+	 * Init Slider
+	 */
+	{
+		namespace: 'slider',
+		module: Slider
+	},
 	//
-	// /**
-	//  * Init Form
-	//  */
-	// {
-	// 	namespace: 'form-ajax',
-	// 	module: FormAjax
-	// },
-	//
-	// /**
-	//  * Init Datepicker
-	//  */
-	// {
-	// 	namespace: 'form-datepicker',
-	// 	module: FormDatepicker
-	// },
-	//
-	// /**
-	//  * Init Slider
-	//  */
-	// {
-	// 	namespace: 'slider',
-	// 	module: Slider
-	// },
-	//
-	// /**
-	//  * Init Slider
-	//  */
-	// {
-	// 	namespace: 'slide-fox',
-	// 	module: SlideFox
-	// }
+
 // @INSERTPOINT :: @ref: js-init-v5
 ]);
 
