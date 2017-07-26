@@ -34,8 +34,8 @@ $bp: (
 	'desktop-m': $bp-desktop-m,
 	'desktop-l': $bp-desktop-l
 );
-//
-//$grid-breakpoints-defaults: $bp;
+
+$grid-breakpoints-defaults: $bp;
 $grid-defaults: (
 	columns: 12,
 	gutter: 36px
