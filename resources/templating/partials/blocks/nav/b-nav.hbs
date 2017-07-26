@@ -13,25 +13,33 @@ Important Notes:
 --- }}
 
 <nav class="b-nav u-grid-row" id="navigation">
-	{{#each data}}
+	{{#each @root.collections.type}}
 		<div class="nav__wrapper u-grid-col is-col-4">
 			<h2 class="nav__headline">
-				{{{type}}}
+				{{uppercase name}}
 			</h2>
 			<ul class="nav__list">
-				{{#each data}}
-					<li class="nav__list-item">
-						{{#if url}}
-							<a href="{{url}}" data-js-atom="nav-item" class="nav__link{{#is menuLink ../../../../category}} is-active{{/is}}">
-								{{{menuLink}}}
-							</a>
-						{{else}}
-							<span class="nav__placeholder">
-								{{{placeholder}}}
-							</span>
-						{{/if}}
-					</li>
-				{{/each}}
+				{{#objToArr @root.pages}}
+					{{#sortArr this "filename"}}
+						{{#each this}}
+							{{#is parsed.data.type ../../name}}
+								{{#isnt parsed.data.publish false}}
+									<li class="nav__list-item">
+											<a href="{{@root.assets}}{{#if
+													@root.servermode}}{{serverFile}}{{else}}{{destFile}}{{/if}}" data-js-atom="nav-item"
+											   class="nav__link{{#is @root.currentPage.filename this.filename}} is-active{{/is}}">
+												{{#if parsed.data.displayName}}
+													{{parsed.data.displayName}}
+												{{else}}
+													{{this.filename}}
+												{{/if}}
+											</a>
+									</li>
+								{{/isnt}}
+							{{/is}}
+						{{/each}}
+					{{/sortArr}}
+				{{/objToArr}}
 			</ul>
 		</div>
 	{{/each}}

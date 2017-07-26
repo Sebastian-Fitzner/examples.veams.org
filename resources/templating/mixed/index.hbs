@@ -1,13 +1,80 @@
 ---
-title: Veams - A System to Build Scalable Web Apps and HTML5 Web Interfaces.
-lead: Components and utilities built with Veams.
-menuLink: Components
+title: Examples for Veams
+contentTitle: Veams contains a building blocks library to speed up templating in projects.
 sortOrder: 01
 sitemap: navigation
 ---
 
-{{#extend "lyt-default"}}
-	{{#content "main"}}
-		<h3>Place your content here!</h3>
+{{#extend "lyt-simple"}}
+	{{#content "page"}}
+		<section class="r-stage">
+			<div class="stage__inner is-container">
+				{{> b-stage-content }}
+			</div>
+		</section>
+		<div class="r-main">
+			<div class="main__inner is-container">
+				<div class="main__content">
+
+					{{! WrapWith START: Grid Row }}
+					{{#wrapWith "u-grid-row"}}
+					{{! WrapWith START: Grid COl }}
+						{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12"}}
+
+						{{! WrapWith START: Grid Row }}
+							{{#parseJSON '{"settings": {
+								"gridCollapsed": true
+							}}'}}
+								{{#wrapWith "u-grid-row" settings=this.settings}}
+								{{! WrapWith START: Grid Col }}
+									{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12 is-col-tablet-p-6"}}
+										<div class="c-box--default" data-css="c-box">
+											<a class="box__link" href="components/accordion/partials/c-accordion-usage">
+												<div class="box__content-wrapper is-headline-wrapper">
+													<h2 class="box__headline">
+														Go To<span> Components</span>
+													</h2>
+												</div>
+												<div class="box__content-wrapper is-content-wrapper">
+													<div class="box__content">
+														<p>And take a look at Accordions, Sliders, Figures and more!</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									{{/wrapWith}}
+									{{! WrapWith END: Grid Col }}
+									{{! WrapWith START: Grid Col }}
+									{{#wrapWith "u-grid-col" colClasses="is-col-mobile-s-12 is-col-tablet-p-6"}}
+										<div class="c-box--default" data-css="c-box">
+											<a class="box__link" href="utilities/grid/partials/u-grid-usage">
+												<div class="box__content-wrapper is-headline-wrapper">
+													<h2 class="box__headline">
+														Go To<span> Utilities</span>
+													</h2>
+												</div>
+												<div class="box__content-wrapper is-content-wrapper">
+													<div class="box__content">
+														<p>And take a look at Storage, Type Ahead, Grids and more!</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									{{/wrapWith}}
+								{{! WrapWith END: Grid Col }}
+								{{/wrapWith}}
+							{{! WrapWith END: Grid Row }}
+							{{/parseJSON}}
+
+						{{/wrapWith}}
+					{{! WrapWith END: Grid COl }}
+
+					{{/wrapWith}}
+					{{! WrapWith END: Grid Row }}
+
+
+				</div>
+			</div>
+		</div>
 	{{/content}}
 {{/extend}}

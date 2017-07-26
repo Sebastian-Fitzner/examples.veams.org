@@ -45,19 +45,14 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage/partials": [
         "u-storage-usage.hbs"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/partials": [
-        "u-type-ahead-usage.hbs"
-    ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion/partials": [
-        "c-accordion-usage.hbs",
-        "c-accordion.hbs",
-        "c-accordion__item.hbs"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article/partials": [
         "c-article-usage.hbs",
         "c-article.hbs",
         "c-article__footer.hbs",
         "c-article__header.hbs"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/partials": [
+        "u-type-ahead-usage.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/badge/partials": [
         "c-badge.hbs"
@@ -78,14 +73,14 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay/partials": [
         "c-overlay-usage.hbs"
     ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/partials": [
+        "c-pagination.hbs"
+    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/picture/partials": [
         "c-picture.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/partials": [
         "c-quote.hbs"
-    ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/partials": [
-        "c-pagination.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/rte/partials": [
         "c-rte.hbs"
@@ -101,6 +96,11 @@
         "c-slider__item.hbs",
         "c-slider__list.hbs",
         "c-slider__pagination.hbs"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion/partials": [
+        "c-accordion-usage.hbs",
+        "c-accordion.hbs",
+        "c-accordion__item.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/video/partials": [
         "c-video.hbs"

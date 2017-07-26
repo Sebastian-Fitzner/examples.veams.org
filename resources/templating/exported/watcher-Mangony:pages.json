@@ -2,12 +2,6 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed": [
         "index.hbs"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article/partials": [
-        "c-article-usage.hbs",
-        "c-article.hbs",
-        "c-article__footer.hbs",
-        "c-article__header.hbs"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion/partials": [
         "c-accordion-usage.hbs",
         "c-accordion.hbs",
@@ -15,6 +9,12 @@
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/badge/partials": [
         "c-badge.hbs"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article/partials": [
+        "c-article-usage.hbs",
+        "c-article.hbs",
+        "c-article__footer.hbs",
+        "c-article__header.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/cta/partials": [
         "c-cta-usage.hbs",
@@ -35,11 +35,11 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay/partials": [
         "c-overlay-usage.hbs"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/picture/partials": [
-        "c-picture.hbs"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/partials": [
         "c-quote.hbs"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/picture/partials": [
+        "c-picture.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/rte/partials": [
         "c-rte.hbs"
@@ -47,6 +47,11 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox/partials": [
         "c-slide-fox-usage.hbs",
         "c-slide-fox.hbs"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/table/partials": [
+        "c-table.hbs",
+        "c-table__cell.hbs",
+        "c-table__row.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slider/partials": [
         "c-slider-usage.hbs",
@@ -56,21 +61,16 @@
         "c-slider__list.hbs",
         "c-slider__pagination.hbs"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/table/partials": [
-        "c-table.hbs",
-        "c-table__cell.hbs",
-        "c-table__row.hbs"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/video/partials": [
         "c-video.hbs"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage/partials": [
+        "u-storage-usage.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid/partials": [
         "u-grid-col.hbs",
         "u-grid-row.hbs",
         "u-grid-usage.hbs"
-    ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage/partials": [
-        "u-storage-usage.hbs"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/partials": [
         "u-type-ahead-usage.hbs"

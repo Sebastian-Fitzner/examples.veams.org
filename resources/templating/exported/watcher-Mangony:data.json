@@ -8,19 +8,22 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion": [
         "bower.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article": [
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/badge": [
         "bower.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/badge": [
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article": [
         "bower.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/cta": [
         "bower.json"
     ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/form": [
+        "bower.json"
+    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/figure": [
         "bower.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/form": [
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/picture": [
         "bower.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay": [
@@ -29,19 +32,16 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination": [
         "bower.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/picture": [
-        "bower.json"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/quote": [
         "bower.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/rte": [
         "bower.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slider": [
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox": [
         "bower.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox": [
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slider": [
         "bower.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/table": [
@@ -62,26 +62,26 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion/data": [
         "accordion-bp.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article/data": [
-        "article-bp.json"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/badge/data": [
         "badge-bp.json"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/article/data": [
+        "article-bp.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/cta/data": [
         "cta-bp.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/figure/data": [
-        "figure-bp.json"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/form/data": [
         "form-bp.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/data": [
-        "pagination-bp.json"
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/figure/data": [
+        "figure-bp.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/picture/data": [
         "picture-bp.json"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/data": [
+        "pagination-bp.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/data": [
         "quote-bp.json"
@@ -89,11 +89,11 @@
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/rte/data": [
         "rte-bp.json"
     ],
-    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slider/data": [
-        "slider-bp.json"
-    ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox/data": [
         "slide-fox-bp.json"
+    ],
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/slider/data": [
+        "slider-bp.json"
     ],
     "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/mixed/components/table/data": [
         "table-bp.json"
