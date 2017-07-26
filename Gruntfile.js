@@ -71,6 +71,7 @@ module.exports = function(grunt) {
 		'browserify:vendor',
 		'browserify:dev',
 		'concurrent:syncing',
+		'copy:ajax',
 		'watchCSS',
 		'express:dev',
 		'open:dev',
@@ -83,7 +84,8 @@ module.exports = function(grunt) {
 		'browserify:vendor',
 		'browserify:dist',
 		'uglify',
-		'concurrent:syncing', 
+		'concurrent:syncing',
+		'copy:ajax',
 		'sassGlobber:dist',
 		'sass:dev',
 		'sass:universal',
@@ -106,7 +108,7 @@ module.exports = function(grunt) {
 	
 	grunt.registerTask('dist', [
 		'clean',
-		'version:patch',
+		// 'version:patch',
 		'build',
 		'copy:dist'
 	]); 
