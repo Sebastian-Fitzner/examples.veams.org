@@ -10,7 +10,7 @@ import FormDatepicker from '../templating/mixed/components/form/js/form-datepick
 import SlideFox from '../templating/mixed/components/slide-fox/js/slide-fox';
 import Slider from '../templating/mixed/components/slider/js/slider';
 import Overlay from '../templating/mixed/components/overlay/js/overlay';
-import Typeahead from '../templating/mixed/utilities/type-ahead/js/typeahead';
+import TypeAhead from '../templating/mixed/utilities/type-ahead/js/type-ahead';
 import Toggler from '../templating/mixed/components/toggler/js/toggler';
 // import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
 // @INSERTPOINT :: @ref: js-import
@@ -69,8 +69,8 @@ Veams.modules.register([
 	 * Init Typeahead
 	 */
 	{
-		namespace: 'typeahead',
-		module: Typeahead
+		namespace: 'type-ahead',
+		module: TypeAhead
 	},
 	/**
 	 * Init Toggler

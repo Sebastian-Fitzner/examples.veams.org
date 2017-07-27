@@ -10,7 +10,7 @@ window["App"]["Templates"]["OVERLAY"] = Handlebars.template({"compiler":[7,">= 4
 window["App"]["Templates"]["SUGGESTIONS__A11Y"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "	<li class=\"typeahead__suggestion-item\" role=\"option\">\n		<a class=\"typeahead__suggestion-link\" data-js-item=\"suggestion-item\" href=\"#\" data-value=\""
+  return "	<li class=\"type-ahead__suggestion-item\" role=\"option\">\n		<a class=\"type-ahead__suggestion-link\" data-js-item=\"suggestion-item\" href=\"#\" data-value=\""
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + "\" aria-controls=\""
     + alias4(((helper = (helper = helpers.instanceId || (depth0 != null ? depth0.instanceId : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"instanceId","hash":{},"data":data}) : helper)))

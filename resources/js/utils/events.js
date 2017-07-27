@@ -5,7 +5,10 @@
  */
 
 let EVENTS = {
-	focus: 'focus'
+	focus: 'focus',
+	touchstart: 'touchstart',
+	touchsmove: 'touchmove',
+	touchend: 'touchend',
 };
 
 /**
@@ -48,7 +51,7 @@ EVENTS.toggler = {
 /**
  * Events for Typeahead
  */
-EVENTS.typeahead = {
+EVENTS.typeAhead = {
 	suggestionChoosen: 'typeahead:suggestionChoosen'
 };
 
