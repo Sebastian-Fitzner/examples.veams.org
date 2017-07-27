@@ -2,27 +2,20 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed": [
         "index.hbs"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid/partials": [
-        "u-grid-col.hbs",
-        "u-grid-row.hbs",
-        "u-grid-usage.hbs"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage/partials": [
-        "u-storage-usage.hbs"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/partials": [
-        "u-type-ahead-usage.hbs"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/article/partials": [
+        "c-article-usage.hbs",
+        "c-article.hbs",
+        "c-article__footer.hbs",
+        "c-article__header.hbs"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion/partials": [
         "c-accordion-usage.hbs",
         "c-accordion.hbs",
         "c-accordion__item.hbs"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/article/partials": [
-        "c-article-usage.hbs",
-        "c-article.hbs",
-        "c-article__footer.hbs",
-        "c-article__header.hbs"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/form/partials": [
+        "c-form-usage.hbs",
+        "c-form.hbs"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/badge/partials": [
         "c-badge.hbs"
@@ -32,25 +25,28 @@
         "c-cta.hbs",
         "c-cta__content.hbs"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/form/partials": [
-        "c-form-usage.hbs",
-        "c-form.hbs"
-    ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/figure/partials": [
         "c-figure.hbs",
         "c-figure__caption.hbs"
     ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/partials": [
+        "c-pagination.hbs"
+    ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay/partials": [
         "c-overlay-usage.hbs"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/partials": [
-        "c-pagination.hbs"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/partials": [
+        "c-quote.hbs"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/picture/partials": [
         "c-picture.hbs"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/rte/partials": [
         "c-rte.hbs"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox/partials": [
+        "c-slide-fox-usage.hbs",
+        "c-slide-fox.hbs"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slider/partials": [
         "c-slider-usage.hbs",
@@ -60,17 +56,6 @@
         "c-slider__list.hbs",
         "c-slider__pagination.hbs"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/partials": [
-        "c-quote.hbs"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox/partials": [
-        "c-slide-fox-usage.hbs",
-        "c-slide-fox.hbs"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/toggler/partials": [
-        "c-toggler-usage.hbs",
-        "c-toggler.hbs"
-    ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/table/partials": [
         "c-table.hbs",
         "c-table__cell.hbs",
@@ -79,9 +64,20 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/video/partials": [
         "c-video.hbs"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/js/templates": [
-        "suggestions__a11y.hbs",
-        "suggestions__options.hbs"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/toggler/partials": [
+        "c-toggler-usage.hbs",
+        "c-toggler.hbs"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/partials": [
+        "u-type-ahead-usage.hbs"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage/partials": [
+        "u-storage-usage.hbs"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid/partials": [
+        "u-grid-col.hbs",
+        "u-grid-row.hbs",
+        "u-grid-usage.hbs"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/form/partials/form-fields": [
         "c-form__checkbox-item.hbs",
@@ -100,5 +96,9 @@
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay/js/templates": [
         "overlay.hbs"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/js/templates": [
+        "suggestions__a11y.hbs",
+        "suggestions__options.hbs"
     ]
 }

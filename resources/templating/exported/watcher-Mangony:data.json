@@ -5,22 +5,10 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/partials/blocks/nav": [
         "nav-bp.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid": [
-        "bower.json"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion": [
         "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/article": [
-        "bower.json"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage": [
-        "bower.json"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/badge": [
-        "bower.json"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion": [
         "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/cta": [
@@ -29,19 +17,19 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/form": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/figure": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/quote": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/figure": [
         "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/picture": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/badge": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/overlay": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/picture": [
         "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/rte": [
@@ -50,35 +38,35 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slider": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/quote": [
         "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/table": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/video": [
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slider": [
         "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/toggler": [
         "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid/data": [
-        "grid-bp.json"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/video": [
+        "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/ajax": [
-        "example-ajax.json"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid": [
+        "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/data": [
-        "type-ahead-bp.json"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/storage": [
+        "bower.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/article/data": [
-        "article-bp.json"
-    ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/badge/data": [
-        "badge-bp.json"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead": [
+        "bower.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/accordion/data": [
         "accordion-bp.json"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/article/data": [
+        "article-bp.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/cta/data": [
         "cta-bp.json"
@@ -89,11 +77,11 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/figure/data": [
         "figure-bp.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/data": [
-        "quote-bp.json"
-    ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/pagination/data": [
         "pagination-bp.json"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/badge/data": [
+        "badge-bp.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/picture/data": [
         "picture-bp.json"
@@ -104,16 +92,28 @@
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slide-fox/data": [
         "slide-fox-bp.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slider/data": [
-        "slider-bp.json"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/quote/data": [
+        "quote-bp.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/table/data": [
         "table-bp.json"
     ],
-    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/video/data": [
-        "video-bp.json"
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/slider/data": [
+        "slider-bp.json"
     ],
     "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/toggler/data": [
         "toggler-bp.json"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/components/video/data": [
+        "video-bp.json"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/grid/data": [
+        "grid-bp.json"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/ajax": [
+        "example-ajax.json"
+    ],
+    "/Users/andy.gutsche/projects/veams/examples.veams.org/resources/templating/mixed/utilities/type-ahead/data": [
+        "type-ahead-bp.json"
     ]
 }
