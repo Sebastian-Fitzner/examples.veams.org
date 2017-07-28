@@ -3,7 +3,7 @@ Links
 =================================================== */
 
 @mixin link-std() {
-	@include transition(300ms ease all);
+	transition: 300ms ease all;
 
 	color: color(highlight-main-dark);
 	text-decoration: dotted;

@@ -1,5 +1,5 @@
 // Global dependencies 
-import $ from "jquery";
+import $ from "./vendor/veams-query/src/veams-query";
 import 'lazysizes';
 import Handlebars from 'handlebars/runtime';
 import VeamsCore from 'veams/src/js/generics/core';

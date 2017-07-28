@@ -4,8 +4,8 @@
 
 	.toggler__link {
 		@include reset-btn;
-		@include transform(rotate(0deg));
-		@include transition(.5s ease-in-out);
+		transform: rotate(0deg);
+		transition: all .5s ease-in-out;
 
 		width: 33px;
 		height: 32px;
@@ -16,8 +16,8 @@
 
 	.toggler__icon-wrapper {
 		.toggler__icon {
-			@include transform(rotate(0deg));
-			@include transition(.25s ease-in-out);
+			transform: rotate(0deg);
+			transition: all .25s ease-in-out;
 
 			display: block;
 			position: absolute;
@@ -47,7 +47,7 @@
 
 	.is-active .toggler__icon {
 		&:nth-child(1) {
-			@include transform(rotate(135deg));
+			transform: rotate(135deg);
 
 			top: 18px;
 		}
@@ -58,7 +58,7 @@
 		}
 
 		&:nth-child(3) {
-			@include transform(rotate(-135deg));
+			transform: rotate(-135deg);
 
 			top: 18px;
 		}

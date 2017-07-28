@@ -2,13 +2,13 @@
 Main File For Imports
 =================================================== */
 // Helpers
-@import "../bower-components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 // Reset (veams-reset or veams-normalize)
-@import "../bower-components/veams-sass/resources/scss/veams-reset";
+@import "../../node_modules/veams/src/scss/veams-reset";
 // Global Variables and Settings
 @import "global/_vars";
-@import "../bower-components/veams-sass/resources/scss/veams";
-@import "../bower-components/neat/core/neat";
+@import "../../node_modules/veams/src/scss/veams";
+@import "../../node_modules/bourbon-neat/core/neat";
 // Icons
 @import "icons/**/*";
 // Helpers

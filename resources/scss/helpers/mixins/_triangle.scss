@@ -3,7 +3,7 @@
 	$size-small-1: if(length($size) == 3, nth($size, 2), $size-large);
 	$size-small-2: if(length($size) == 3, nth($size, 3), $size-large);
 
-	@include prefix(transform, rotateZ($rotation));
+	transform: rotateZ($rotation);
 
 	height: 0;
 	width: 0;

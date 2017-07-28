@@ -4,8 +4,8 @@
 	transition: background-color $transition-duration $transition-ease-method;
 
 	&.is-sticky {
-		@include transition(top 300ms ease, background-color $transition-duration $transition-ease-method);
-		@include prefix('transition-delay', 600ms);
+		transition: top 300ms ease, background-color $transition-duration $transition-ease-method;
+		transition-delay: 600ms;
 
 		background-color: color(white);
 		border-bottom: 1px solid darken(color(highlight-light), 10);

@@ -68,7 +68,7 @@ Navigation
 	}
 
 	.nav__link {
-		@include transition(color $transition-duration/2 $transition-ease-method);
+		transition: color $transition-duration/2 $transition-ease-method;
 
 		font-size: 2.4rem;
 		font-family: $font-family;

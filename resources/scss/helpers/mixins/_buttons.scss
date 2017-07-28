@@ -13,7 +13,7 @@ $display: inline-block) {
 	$font-color: nth($font-colors, 1);
 	$font-color-hover: if(length($font-colors) == 2, nth($font-colors, 2), $font-color);
 
-	@include transition(background-color $transition-duration $transition-ease-method);
+	transition: background-color $transition-duration $transition-ease-method;
 
 	background-color: $bg-color;
 	display: $display;

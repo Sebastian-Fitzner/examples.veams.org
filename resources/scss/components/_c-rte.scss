@@ -182,7 +182,7 @@ Global Styles
 	}
 
 	code {
-		@include transition(all 500ms ease);
+		transition: all 500ms ease;
 
 		font-family: Courier, Monospace, "Courier New", sans-serif;
 	}
