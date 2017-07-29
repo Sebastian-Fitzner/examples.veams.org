@@ -12,6 +12,7 @@ import Slider from '../templating/mixed/components/slider/js/slider';
 import Overlay from '../templating/mixed/components/overlay/js/overlay';
 import TypeAhead from '../templating/mixed/utilities/type-ahead/js/type-ahead';
 import Toggler from '../templating/mixed/components/toggler/js/toggler';
+import Comparer from '../templating/mixed/components/comparer/js/comparer';
 // import Overlay from '../templating/mixed/blocks/overlay/js/overlay';
 // @INSERTPOINT :: @ref: js-import
 
@@ -78,6 +79,13 @@ Veams.modules.register([
 	{
 		namespace: 'toggler',
 		module: Toggler
+	},
+	/**
+	 * Init Comparer
+	 */
+	{
+		namespace: 'comparer',
+		module: Comparer
 	}
 // @INSERTPOINT :: @ref: js-init-v5
 ]);

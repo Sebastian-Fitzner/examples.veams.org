@@ -82,3 +82,6 @@
 	path = resources/templating/mixed/components/toggler
 	url = https://github.com/Veams/veams-component-toggler.git
 	branch = dev
+[submodule "resources/templating/mixed/components/comparer"]
+	path = resources/templating/mixed/components/comparer
+	url = git@github.com:Veams/veams-component-comparer.git

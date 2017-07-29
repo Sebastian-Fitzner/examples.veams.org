@@ -1,0 +1,8 @@
+{
+    "/Users/sebastian.fitzner/projects/veams/examples.veams.org/resources/templating/layouts": [
+        "lyt-default.hbs",
+        "lyt-docs.hbs",
+        "lyt-full.hbs",
+        "lyt-simple.hbs"
+    ]
+}
