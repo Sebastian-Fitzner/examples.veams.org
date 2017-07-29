@@ -85,3 +85,4 @@
 [submodule "resources/templating/mixed/components/comparer"]
 	path = resources/templating/mixed/components/comparer
 	url = git@github.com:Veams/veams-component-comparer.git
+	branch = dev
