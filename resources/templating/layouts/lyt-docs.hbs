@@ -13,7 +13,7 @@
 							{{#wrapWith "c-accordion__item" accItemId="readme-file" accButton="README"}}
 								<div class="docs__code-item">
 									<div class="c-rte--details" data-css="c-rte">
-										{{{markdown (buildPath @root.currentPage.dirname "README.md" goUp=1) }}}
+										{{{markdown (buildPath @root.currentPage.dirname "README.md" goUp=0) }}}
 									</div>
 								</div>
 							{{/wrapWith}}
@@ -22,7 +22,7 @@
 									<div class="docs__code-item">
 										{{#highlight "json" escapeHTML=true}}
 											{{{embeding
-													(buildPath @root.currentPage.dirname (buildPath "data" (concat this.contextData ".json")) goUp=1) }}}
+													(buildPath @root.currentPage.dirname (buildPath "" (concat this.contextData ".json")) goUp=0) }}}
 										{{/highlight}}
 									</div>
 								{{/wrapWith}}
@@ -66,7 +66,7 @@
 										<div class="docs__code-item">
 											{{#highlight "scss" escapeHTML=true}}
 												{{{embeding
-														(buildPath (buildPath @root.currentPage.dirname 'scss' goUp=1) this) }}}
+														(buildPath (buildPath @root.currentPage.dirname 'scss' goUp=0) this) }}}
 											{{/highlight}}
 										</div>
 									{{/each}}
@@ -80,7 +80,7 @@
 										<div class="docs__code-item">
 											{{#highlight "js" escapeHTML=true}}
 												{{{embeding
-														(buildPath (buildPath @root.currentPage.dirname 'js' goUp=1) this) }}}
+														(buildPath (buildPath @root.currentPage.dirname 'js' goUp=0) this) }}}
 											{{/highlight}}
 										</div>
 									{{/each}}
@@ -93,7 +93,7 @@
 										<h4 class="docs__demo-section-headline">{{this}}</h4>
 										<div class="docs__code-item">
 											{{#highlight "hbs" escapeHTML=true}}
-												{{{embeding	(buildPath (buildPath @root.currentPage.dirname 'js' goUp=1) this) }}}
+												{{{embeding	(buildPath (buildPath @root.currentPage.dirname 'js' goUp=0) this) }}}
 											{{/highlight}}
 										</div>
 									{{/each}}
