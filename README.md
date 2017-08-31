@@ -66,3 +66,5 @@ To export image data you can use `grunt-image-size-export`.
 - TPM/PM:
 - Frontend:
 - Backend:
+
+git submodule foreach git pull origin dev
